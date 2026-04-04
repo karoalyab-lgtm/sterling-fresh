@@ -1,0 +1,97 @@
+.checklist {
+    ul {
+        padding-left: 0;
+        list-style: none;
+        margin-bottom: 0;
+    }
+    li {
+        color: $body-color;
+        margin-bottom: 16px;
+        font-weight: 500;
+        position: relative;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        i {
+            color: $theme-color;
+            margin-right: 8px;
+        }
+    }
+}
+
+.icon-box {
+    .slick-arrow {
+        &:first-child {
+            margin-right: 5px;
+        }
+    }
+}
+
+.brand-box {
+    text-align: center;
+    img {
+        filter: brightness(0) invert(0.6);
+        transition: 0.4s ease;
+    }
+    &:hover {
+        img {
+            filter: none;
+        }
+    }
+}
+
+.filter-menu {
+    margin-top: -20px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    .ot-btn {
+        background-color: $white-color;
+        border: 1px solid $border-color;
+        padding: 15px 30px;
+        color: $body-color;
+        min-width: auto;
+        &:before,
+        &:after {
+            background-color: $theme-color;
+        }
+        &.active,
+        &:hover {
+            color: $white-color;
+            border-color: $theme-color;
+            &:after,
+            &:before {
+                width: calc(100% - 30px);
+            }
+        }
+        @include md {
+            padding: 13px 20px;
+        }
+    }
+    @include md {
+        margin-top: -10px;
+        margin-bottom: 45px;
+        flex-wrap: wrap;
+    }
+}
+
+@include lg {
+    p {
+        &.mb-30 {
+            margin-bottom: 25px;
+        }
+        &.mb-35 {
+            margin-bottom: 28px;
+        }
+        &.mb-40 {
+            margin-bottom: 32px;
+        }
+        &.mb-45 {
+            margin-bottom: 35px;
+        }
+    }
+}
+.video-sec1 {
+    background-position: top center;
+}

@@ -1,0 +1,196 @@
+/* Team global ---------------------------------- */
+.ot-team {
+    position: relative;
+    .box-img {
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+            transition: 0.4s ease-in-out;
+        }
+    }
+    .box-title {
+        margin-bottom: 0px;
+    }
+    &:hover {
+        .box-img {
+            img {
+                transform: scale(1.08);
+            }
+        }
+    }
+}
+/* Team Box ---------------------------------- */
+.team-box {
+    position: relative;
+    overflow: hidden;
+    .box-img {
+        border-radius: 10px;
+        &:after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: $title-color;
+            border-radius: inherit;
+            transition: 0.4s ease-in-out;
+            opacity: 0;
+        }
+    }
+    .ot-social {
+        width: 45px;
+        a {
+            margin: 0 0 7px 0;
+            color: $theme-color;
+            &:hover {
+                background-color: $theme-color2;
+                color: $white-color;
+            }
+        }
+    }
+    .box-content {
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        z-index: 3;
+        padding: 0 0 50px 40px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(50px);
+        transition: 0.4s ease-in-out;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 150px;
+            width: 268px;
+            background-color: $theme-color;
+            clip-path: path("M103.919 0.668457C68.1085 4.7711 44.1667 6.57312 19.2696 40.2856C12.6961 51.7735 8.4872 70.8843 8.46627 86.2985V94.2154L3.09996 97.733L0.00793457 99.8725V114.214L7.50098 107.884L11.4564 104.769L21.0299 114.214C32.905 125.844 38.816 129.568 49.0662 135.728C73.0194 150.123 102.679 155.073 127.568 146.338C152.925 137.437 178.767 121.935 214.307 82.7773C235.505 59.4234 245.329 51.5187 256.847 43.2618C258.951 41.754 268.008 35.6765 268.008 35.3754C268.008 35.3754 250.93 28.3668 232.242 22.2005C204.814 13.1507 182.264 7.96883 156.674 4.4389C143.484 2.6196 124.642 1.06792 103.919 0.668457Z");
+            z-index: -1;
+        }
+    }
+    .box-title {
+        color: $white-color;
+        margin-top: 12px;
+        a:hover {
+            color: $title-color;
+        }
+    }
+    .box-text {
+        color: $white-color;
+    }
+    &:hover {
+        .box-img {
+            &:after {
+                opacity: 0.7;
+            }
+        }
+        .box-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            transform-origin: bottom left;
+            @include sm {
+                transform: translateY(0) scale(0.9);
+            }
+            @include xs {
+                transform: translateY(0) scale(1);
+            }
+        }
+    }
+}
+
+@include sm {
+    .team-box {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Team Details ---------------------------------- */
+.about-card {
+    &__img {
+        border-radius: 10px;
+        box-shadow: 0px 6px 30px rgba(160, 160, 160, 0.15);
+        background-color: $white-color;
+        padding: 40px;
+        @include xs {
+            border-radius: 15px;
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+            border-radius: inherit;
+        }
+    }
+    &__box {
+        padding-left: 30px;
+    }
+    &__title {
+        margin-top: -0.3em;
+        margin-bottom: 5px;
+    }
+    &__desig {
+        color: $theme-color;
+        display: block;
+        margin-bottom: 26px;
+    }
+    .box-title {
+        margin-bottom: 10px;
+    }
+}
+.about-info {
+    &-wrap {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        gap: 24px 10px;
+        padding: 20px 0;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        margin-bottom: 40px;
+    }
+    .box-title {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+    a {
+        color: $body-color;
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+
+@include ml {
+    .about-card {
+        &__box {
+            padding-left: 0;
+        }
+    }
+}
+
+@include lg {
+    .about-card {
+        &__img {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@include xs {
+    .about-info {
+        &-wrap {
+            grid-template-columns: auto auto;
+        }
+    }
+}
+
+@include vxs {
+    .about-info {
+        &-wrap {
+            grid-template-columns: auto;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+/* Testimonial Card ---------------------------------- */
+.testi-card {
+    background-color: $smoke-color2;
+    padding: 0 40px 40px 40px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    background-size: auto;
+    background-position: bottom -1px center;
+    background-repeat: repeat-x;
+    .box-img {
+        width: 100px;
+        border-radius: 999px;
+        overflow: hidden;
+        transform: translateY(-50px);
+        margin-bottom: -30px;
+    }
+    .box-quote {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    .box-title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .box-desig {
+        font-weight: 500;
+        display: block;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+}
+
+@include vxs {
+    .testi-card {
+        padding: 0 30px 30px 30px;
+        .box-quote {
+            top: 30px;
+            right: 30px;
+            max-width: 60px;
+            svg {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+/* Testimonial Box ---------------------------------- */
+.testi-box {
+    background-color: $white-color;
+    padding: 50px;
+    border-radius: 10px;
+    background-size: auto;
+    background-position: bottom -1px center;
+    background-repeat: repeat-x;
+    .box-img {
+        width: 80px;
+        position: relative;
+        margin-bottom: 10px;
+        > img {
+            border-radius: 10px;
+        }
+    }
+    .box-profile {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        margin-top: 36px;
+    }
+    .box-quote {
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        @include equal-size-lineHeight(40px);
+        background-color: $theme-color;
+        border-radius: 99px;
+        text-align: center;
+    }
+    .box-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .box-text {
+        font-size: 20px;
+        line-height: 34px;
+        margin-top: -0.4em;
+    }
+    .box-desig {
+        font-family: $style-font;
+        font-weight: 500;
+        display: block;
+        font-size: 20px;
+        margin-bottom: 0;
+        color: $theme-color;
+    }
+}
+
+@include md {
+    .testi-box {
+        padding: 40px;
+        .box-text {
+            font-size: 18px;
+            line-height: 32px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .testi-box {
+        padding: 40px 20px;
+    }
+}

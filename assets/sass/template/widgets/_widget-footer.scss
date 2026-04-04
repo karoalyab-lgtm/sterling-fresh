@@ -1,0 +1,205 @@
+.footer-widget {
+    margin-bottom: 40px;
+
+    &,
+    .widget {
+        padding: 0;
+        border: none;
+        padding-bottom: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    input,
+    select {
+        height: 55px;
+        background-color: transparent;
+        border: 1px solid #283752;
+        &:focus {
+            border-color: $theme-color;
+            background-color: transparent;
+        }
+    }
+    .form-group {
+        > i {
+            color: $theme-color;
+        }
+    }
+
+    .widget_title {
+        max-width: 275px;
+        margin-bottom: 35px;
+        font-weight: 600;
+        color: $white-color;
+        display: block;
+        position: relative;
+        padding-left: 20px;
+        &:before {
+            left: 0;
+            top: 2px;
+        }
+    }
+
+    &.widget_meta,
+    &.widget_pages,
+    &.widget_archive,
+    &.widget_categories,
+    &.widget_nav_menu {
+        ul {
+            margin-top: -3px;
+        }
+        .menu,
+        > ul {
+            margin-bottom: -5px;
+        }
+        margin-bottom: 40px;
+
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            padding: 0 0 0 20px;
+            margin-bottom: 22px;
+            font-family: $body-font;
+            color: $body-color;
+            display: block;
+            max-width: 100%;
+            width: max-content;
+            padding-right: 0;
+            border: none;
+            background-color: transparent;
+            position: relative;
+            transition: 0.4s ease-in-out;
+            &:after {
+                content: "\f054";
+                font-weight: 900;
+                right: unset;
+                left: 0;
+                top: 3px;
+                height: auto;
+                width: auto;
+                line-height: 1;
+                background-color: transparent;
+                border: none;
+                color: inherit;
+                transition: 0.4s transform;
+                font-size: 0.9em;
+            }
+            &:before {
+                display: none;
+            }
+
+            &:hover {
+                background-color: transparent;
+                color: $theme-color;
+                &:before {
+                    color: $theme-color;
+                    transform: translateX(3px)
+                }
+            }
+        }
+
+        li {
+            > span {
+                @include equal-size(auto);
+                position: relative;
+                background-color: transparent;
+                color: $body-color;
+                line-height: 1;
+            }
+
+            &:last-child {
+                a {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .recent-post {
+        max-width: 310px;
+        margin-bottom: 30px;
+        padding-bottom: 0;
+        border-bottom: none;
+        .post-title {
+            font-weight: 600;
+            color: $white-color;
+			line-height: 1.5;
+			margin-bottom: 7px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+		.recent-post-meta {
+			i {
+				color: $theme-color;
+				transition: 0.3s;
+			}
+			a:hover {
+				i {
+					color: $theme-color;
+				}
+			}
+		}
+    }
+}
+
+.ot-widget-about {
+    .about-logo {
+        margin-bottom: 35px;
+    }
+    .about-text {
+        margin-bottom: 25px;
+        margin-top: -0.46em;
+    }
+}
+
+.footer-text {
+    margin-top: -0.46em;
+    margin-bottom: 30px;
+}
+.newsletter-widget {
+    position: relative;
+    z-index: 2;
+    max-width: 280px;
+    .form-group {
+        margin-bottom: 17px;
+    }
+}
+.newsletter-form {
+    display: flex;
+    .form-control {
+        background-color: $white-color;
+        border: 1px solid $white-color;
+        color: $title-color;
+        @include inputPlaceholder {
+            color: $title-color;
+        }
+        &:focus {
+            background-color: $white-color;
+            border-color: $title-color;
+        }
+    }
+    .icon-btn {
+        min-width: 55px;
+        height: 55px;
+        border-radius: 0;
+        background-color: $title-color;
+        color: $white-color;
+    }
+}
+
+@include lg {
+    .footer-widget {
+        &.widget_meta,
+        &.widget_pages,
+        &.widget_archive,
+        &.widget_categories,
+        &.widget_nav_menu {
+            a {
+                margin-bottom: 16px;
+            }
+    
+        }
+    }
+}

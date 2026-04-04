@@ -1,0 +1,92 @@
+.breadcumb-menu {
+    max-width: 100%;
+    padding: 0;
+    margin: 28px 0 -0.5em 0;
+    list-style-type: none;
+    position: relative;
+    li {
+        display: inline-block;
+        margin-right: 3px;
+        padding-right: 5px;
+        list-style: none;
+        position: relative;
+
+        &:after {
+            content: "\f324";
+            position: relative;
+            margin-left: 10px;
+            font-weight: 500;
+            font-size: 15px;
+            color: inherit;
+            font-family: $icon-font;
+        }
+
+        &:last-child {
+            padding-right: 0;
+            margin-right: 0;
+            color: $theme-color2;
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    li,
+    a,
+    span {
+        white-space: normal;
+        color: inherit;
+        word-break: break-word;
+        font-weight: 600;
+        font-size: 16px;
+        color: $white-color;
+        text-transform: uppercase;
+    }
+}
+
+.breadcumb-title {
+    font-weight: 700;
+    color: $white-color;
+    margin: -0.2em 0 -0.2em 0;
+    display: block;
+    position: relative; 
+}
+
+.breadcumb-wrapper {
+    background-color: $title-color;
+    padding: 144px 0 165px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+@include lg {
+    .breadcumb-wrapper {
+        padding: 115px 0 130px;
+    }
+    .breadcumb-menu {
+        margin: 20px 0 -0.5em 0;
+    }
+}
+
+@include md {
+    .breadcumb-wrapper {
+        padding: 100px 0 110px;
+    }
+    .breadcumb-menu {
+        margin: 16px 0 -0.5em 0;
+        li,
+        a,
+        span {
+            font-size: 16px;
+        }
+    }
+    .breadcumb-title {
+        font-size: 36px;
+    }
+}
+
+@include sm {
+    .breadcumb-title {
+        font-size: 34px;
+    }
+}

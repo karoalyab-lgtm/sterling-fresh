@@ -1,0 +1,41 @@
+/* Category Card ---------------------------------- */
+.category-card {
+    background: $smoke-color2;
+    text-align: center;
+    padding: 40px 10px;
+    position: relative;
+    z-index: 2;
+    transition: 0.4s ease-in-out;
+    .shape {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        background-size: auto;
+        background-position: bottom -1px center;
+        background-repeat: repeat-x;
+    }
+    .box-img {
+        margin-bottom: 20px;
+    }
+    .box-title {
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-bottom: -0.34em;
+        a:hover {
+            color: $title-color;
+        }
+    }
+    &:hover {
+        background-color: $theme-color;
+        .box-title {
+            color: $white-color;
+        }
+        .box-img {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}

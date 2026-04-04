@@ -1,0 +1,113 @@
+/* Why 1 ---------------------------------- */
+@media (min-width: 1300px) {
+    .img-box3 {
+        margin-left: 50px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: max-content;
+        }
+    }
+}
+@include xl {
+    .img-box3 {
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+.cta-sec1 {
+    padding-bottom: 240px;
+}
+.why-area1 {
+    padding: 80px 80px 0 80px;
+    border-radius: 20px 20px;
+    background-color: $white-color;
+    position: relative;
+    z-index: 4;
+    margin-top: -240px;
+    @include sm {
+        padding: 40px 20px 0 20px;
+    }
+}
+
+.why-feature {
+    &-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    background-color: $smoke-color2;
+    border-radius: 15px;
+    padding: 35px 25px 35px 35px;
+    background-size: auto;
+    background-position: bottom right;
+    transition: 0.4s ease-in-out;
+    .box-icon {
+        @include equal-size-lineHeight(81px);
+        background-color: $theme-color;
+        border-radius: 99px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        transition: 0.4s ease-in-out;
+        margin-bottom: 26px;
+        &:before {
+            content: '';
+            position: absolute;
+            inset: 1px 1px 1px 0;
+            background-color: $smoke-color2;
+            border-radius: inherit;
+            z-index: -1;
+            transition: 0.4s ease-in-out;
+        }
+        &:after {
+            content: url('data:image/svg+xml,<svg width="49" height="19" viewBox="0 0 49 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.7901 3.06577C28.3694 1.61373 24.3006 0.487671 19.5538 0.132069C14.6261 -0.238349 7.45306 0.813628 2.69113 2.25085C-2.07081 3.68808 2.78154 2.51756 2.78154 2.51756C19.6894 -2.14971 31.2024 2.48792 37.8932 7.14038C45.1567 12.1929 48.5021 18.3418 48.5323 18.4159L48.9994 18.2233C48.9692 18.164 45.6841 11.8077 38.2851 6.66625C36.4918 5.39201 34.3218 4.13258 31.7901 3.06577Z" fill="%234AA760"/></svg>');
+            position: absolute;
+            top: 5px;
+            right: -3px;
+            line-height: 1px;
+        }
+    }
+    .box-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: -0.34em;
+        transition: 0.4s ease-in-out;
+    }
+    &:hover {
+        background-color: $theme-color;
+        .box-title {
+            color: $white-color;
+        }
+        .box-icon {
+            background-color: $white-color;
+            &:before {
+                background-color: $theme-color;
+            }
+            &:after {
+                filter: brightness(0) invert(1);
+            }
+            img {
+                transform: rotateY(180deg);
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+}
+
+@include xs {
+    .why-feature {
+        &-wrap {
+            grid-template-columns: auto;
+        }
+        text-align: center;
+        .box-icon {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

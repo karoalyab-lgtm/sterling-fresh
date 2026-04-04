@@ -1,0 +1,27 @@
+.error-content {
+    text-align: center;
+	max-width: 640px;
+	margin: 0 auto;
+}
+.error-img {
+    margin-bottom: 40px;
+	text-align: center;
+}
+.error-title {
+    margin-bottom: 22px;
+}
+.error-text {
+    margin-bottom: 30px;
+}
+
+@include md {
+	.error-img {
+		margin-bottom: 30px;
+	}
+	.error-title {
+		margin-bottom: 15px;
+	}
+	.error-text {
+		margin-bottom: 20px;
+	}
+}

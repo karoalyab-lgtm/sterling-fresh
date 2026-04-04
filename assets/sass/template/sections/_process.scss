@@ -1,0 +1,89 @@
+/* Process Card --------------------------------------*/
+.process-card {
+    &-wrap {
+        display: flex;
+        justify-content: space-between
+    }
+    @include equal-size(280px);
+    background-color: $theme-color;
+    border-radius: 999px;
+    padding: 55px 25px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    transition: 0.4s ease-in-out;
+    &:before {
+        content: '';
+        position: absolute;
+        inset: 2px 3px 2px 0;
+        background-color: $white-color;
+        border-radius: inherit;
+        z-index: -1;
+        transition: 0.4s ease-in-out;
+    }
+    .box-number {
+        width: 50px;
+        height: 56px;
+        font-size: 18px;
+        font-weight: 700;
+        color: $white-color;
+        position: absolute;
+        top: 38px;
+        left: 7px;
+        background-image: url('data:image/svg+xml,<svg width="51" height="57" viewBox="0 0 51 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M45.268 12.782C47.6966 4.90697 50.4109 0.531982 50.4109 0.531982C50.4109 0.531982 -15.0179 7.24035 5.69647 46.1778C35.268 59.7404 39.8394 30.282 45.268 12.782Z" fill="%23FF9C00"/><path d="M47.2681 2.71948C47.2681 2.71948 43.6967 5.34451 38.5538 9.71951C33.4109 13.9487 26.8395 20.0736 20.8395 26.6361C17.8395 29.9903 14.9823 33.3445 12.5538 36.6987C11.9823 37.5737 11.4109 38.3028 10.8395 39.1778C10.268 40.0528 9.6966 40.782 9.26803 41.657C8.6966 42.3862 8.26802 43.2612 7.83945 43.9903C7.41088 44.7195 6.98232 45.5945 6.69661 46.3236C6.26804 47.0528 5.9823 47.782 5.69659 48.5111C5.41087 49.2403 5.12519 49.8237 4.83948 50.407C4.55376 50.9903 4.41087 51.5736 4.26801 52.157C4.12516 52.7403 3.98232 53.1778 3.83946 53.6153C3.55374 54.4903 3.4109 55.2195 3.4109 55.8028C3.26805 56.2403 3.26804 56.532 3.26804 56.532L0.410889 55.9487C0.410889 55.9487 0.410897 55.657 0.553755 55.0736C0.696612 54.4903 0.839461 53.7612 1.12518 52.7403C1.26803 52.3028 1.41088 51.7195 1.6966 51.1362C1.98231 50.5528 2.12517 49.9695 2.41088 49.2403C2.6966 48.5111 2.98233 47.9278 3.4109 47.1987C3.69662 46.4695 4.12517 45.7403 4.55375 45.0112C4.98232 44.282 5.41088 43.407 5.83945 42.6778C6.26803 41.9486 6.83947 41.0737 7.4109 40.1987C7.98233 39.3237 8.55377 38.5945 9.1252 37.7195C9.69663 36.8445 10.4109 36.1153 10.9823 35.2403C13.5538 31.8862 16.5538 28.532 19.8395 25.3237C26.1252 18.907 32.9824 13.2195 38.2681 9.13614C43.5538 5.19864 47.2681 2.71948 47.2681 2.71948Z" fill="%23FF9C00"/></svg>');
+        background-size: 100% 100%;
+        line-height: 56px;
+        padding-right: 6px;
+    }
+    .box-icon {
+        margin-bottom: 30px;
+    }
+    .box-title {
+        margin-bottom: 11px;
+    }
+    .box-text {
+
+    }
+    &:hover {
+        .box-icon {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+
+@include lg {
+    .process-card {
+        @include equal-size(224px);
+        padding: 18px 10px;
+        .box-number {
+            left: 0;
+        }
+    }
+}
+
+@include md {
+    .process-card {
+        &-wrap {
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        width: calc(50% - 12px);
+        aspect-ratio: 16 / 16;
+        padding: 27px 10px;
+    }
+}
+
+@include xs {
+    .process-card {
+        &-wrap {
+            justify-content: center;
+        }
+        @include equal-size(280px);
+        padding: 55px 25px;
+        .box-number {
+            left: 7px;
+        }
+    }
+}

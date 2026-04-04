@@ -1,0 +1,86 @@
+
+.input-white {
+    .form-control,
+    .form-select {
+        background-color: $white-color;
+    }
+    .form-group {
+        > i {
+            background-color: $white-color;
+        }
+    }
+}
+
+/* Contact Page ----------------------------*/ 
+.contact-feature {
+    border-radius: 10px;
+    background-color: $smoke-color2;
+    text-align: center;
+    padding: 40px 5px;
+    transition: 0.4s ease-in-out;
+    border: 1px solid transparent;
+    .box-icon {
+        @include equal-size(100px);
+        line-height: 96px;
+        background-color: $white-color;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 auto 25px auto;
+        img {
+            transition: 0.4s ease-in-out;
+        }
+    }
+    .box-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .box-text {
+        a {
+            display: block;
+            max-width: fit-content;
+            color: inherit;
+            margin-left: auto;
+            margin-right: auto;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+    &:hover {
+        border-color: $theme-color;
+        .box-icon {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+
+.contact-form {
+    background-color: $smoke-color2;
+    padding: 100px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+    @include lg {
+        padding: 60px;
+    }
+    @include xs {
+        padding: 40px 20px;
+    }
+}
+
+.contact-map {
+    margin-top: -325px;
+    line-height: 0px;
+    @include lg {
+        margin-top: -200px;
+    }
+    iframe {
+        height: 600px;
+        filter: invert(0.8) grayscale(1);
+        @include lg {
+            height: 450px;
+        }
+    }
+}

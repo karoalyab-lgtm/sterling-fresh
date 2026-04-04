@@ -1,0 +1,244 @@
+.footer-wrapper {
+    position: relative;
+    z-index: 2;
+    .newsletter-title {
+        color: $white-color;
+    }
+    .ot-social {
+        a {
+            --icon-size: 44px;
+            font-size: 14px;
+            background-color: #282828;
+            &:hover {
+                background-color: $theme-color;
+                color: $white-color;
+            }
+        }
+    }
+}
+.widget-area {
+    padding-top: $space;
+    padding-bottom: 75px;
+}
+
+.copyright-wrap {
+    padding: 26px 0;
+    background-color: #282828;
+    @include lg {
+        padding: 24px 0;
+    }
+    &.bg-style1 {
+        margin-top: -35px;
+        padding: 72px 0 20px 0;
+        background-color: transparent;
+        background-position: top center;
+        background-size: 1920px 124px;
+        background-repeat: repeat-x;
+    }
+}
+
+.copyright-text {
+    margin: 0;
+    a {
+        color: $theme-color;
+        &:hover {
+            color: $white-color;
+        }
+    }
+}
+
+@include ml {
+    .ot-social a {
+        margin-right: 3px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.footer-links {
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        font-family: $body-font;
+        display: inline-block;
+        padding-right: 15px;
+        margin-right: 10px;
+        position: relative;
+        &:after {
+            content: '';
+            height: 20px;
+            width: 1px;
+            background-color: $body-color;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin: -10px 0;
+        }
+        &:last-child {
+            margin-right: 0;
+            padding-right: 0;
+            &:after {
+                display: none;
+            }
+        }
+    }
+    a {
+        font-family: inherit;
+        color: $body-color;
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+
+.footer-layout1 {
+    background-color: $title-color;
+    --body-color: #B5B5B5;
+    overflow: hidden;
+}
+
+.newsletter-sec1 {
+    background-position: bottom center;
+    background-size: auto;
+}
+
+.ot-widget-contact {
+    max-width: 230px;
+}
+
+.info-box {
+    margin-bottom: 24px;
+    padding-left: 35px;
+    position: relative;
+    &:last-child {
+        margin-bottom: -5px;
+    }
+    &_icon {
+        font-size: 18px;
+        line-height: 1;
+        color: $theme-color;
+        width: 32px;
+        position: absolute;
+        top: 5px;
+        left: 0;
+    }
+	&_text {
+		display: block;
+		color: $body-color;
+		margin-top: -0.45em;
+		margin-bottom: 0;
+	}
+	&_link {
+        display: inline-block;
+		color: $body-color;
+		&:hover {
+			color: $theme-color;
+		}
+	}
+}
+
+@include md {
+    .footer-layout1 {
+        .widget-area {
+            padding-top: $space-mobile;
+            padding-bottom: 38px;
+        }
+    }
+    .copyright-text {
+        text-align: center;
+    }
+}
+
+.newsletter-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    @include md {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding: 40px 0;
+    }
+    .newsletter-title {
+        margin-bottom: -0.23em;
+        max-width: 460px;
+        color: $white-color;
+        @include md {
+            max-width: 100%;
+        }
+    }
+}
+
+.newsletter-form {
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+    .form-group {
+        width: 100%;
+    }
+    .form-control {
+        width: 100%;
+        color: $body-color;
+        border-radius: 0;
+        @include inputPlaceholder {
+            color: $body-color;
+        }
+    }
+    .ot-btn {
+        min-width: 150px;
+        border-radius: 0;
+    }
+}
+
+@include xs {
+    .newsletter-form {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+// footer v2 ---------------------------
+.footer-wrapper {
+    .footer-shape-bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 36.2%;
+        background-color: #1C232E;
+        @include hd {
+            display: none;
+        }
+        @include xxl {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1199px) {
+    .footer-margin-sec {
+        .booking-form {
+            padding-bottom: 226px;
+        }
+        .schedule-card {
+            margin-bottom: 146px;
+        }
+    }
+}
+.footer-margin-sec {
+    margin-bottom: -148px;
+    @include md {
+        margin-bottom: -122px;
+    }
+    @include sm {
+        margin-bottom: -117px;
+    }
+    @include xs {
+        margin-bottom: -150px;
+    }
+}
