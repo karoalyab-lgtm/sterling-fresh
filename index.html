@@ -44,216 +44,12 @@
     <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .header-brand {
-            display: inline-flex;
-            align-items: center;
-            gap: 14px;
-            color: var(--title-color);
-            font-size: 22px;
-            font-weight: 700;
-        }
-
-        .header-brand img {
-            width: 58px;
-            height: 58px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid rgba(255, 255, 255, 0.45);
-        }
-
-        .lang-switch {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .lang-item {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 52px;
-            height: 42px;
-            padding: 0 16px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            border-radius: 999px;
-            background-color: rgba(255, 255, 255, 0.08);
-            color: #0f2512;
-            font-size: 14px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .lang-item.active,
-        .lang-item:hover {
-            background-color: var(--theme-color);
-            border-color: var(--theme-color);
-            color: #0f2512;
-        }
-
-        .menu-area .lang-item {
-            border-color: rgba(0, 0, 0, 0.12);
-            background-color: #ffffff;
-            color: var(--title-color);
-        }
-
-        .menu-area .lang-item.active,
-        .menu-area .lang-item:hover {
-            color: #ffffff;
-        }
-
-        .mobile-lang-switch {
-            margin-top: 24px;
-            justify-content: center;
-        }
-
-        .single-hero .ot-hero-bg::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(90deg, rgba(13, 32, 16, 0.84) 0%, rgba(13, 32, 16, 0.46) 55%, rgba(13, 32, 16, 0.18) 100%);
-        }
-
-        .single-hero .hero-style1 {
-            max-width: 720px;
-            padding-top: 150px;
-            padding-bottom: 150px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-text {
-            max-width: 640px;
-            margin-bottom: 32px;
-            color: rgba(255, 255, 255, 0.86);
-            font-size: 18px;
-            line-height: 1.75;
-        }
-
-        .overview-image img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .contact-panel {
-            padding: 40px;
-            border-radius: 10px;
-            background-color: #ffffff;
-            box-shadow: 0 20px 60px rgba(16, 24, 40, 0.08);
-        }
-
-        .contact-list {
-            display: grid;
-            gap: 16px;
-            margin-top: 30px;
-        }
-
-        .contact-list .info-box {
-            margin-bottom: 0;
-            padding: 18px 22px;
-            border-radius: 20px;
-            background-color: var(--smoke-color2);
-        }
-
-        .overview-copy {
-            position: relative;
-        }
-
-        .overview-extra {
-            display: none;
-            padding-top: 6px;
-        }
-
-        .overview-copy.is-expanded .overview-extra {
-            display: block;
-        }
-
-        .btn-read-more {
-            margin-top: 10px;
-            padding: 0;
-            border: 0;
-            background: transparent;
-            color: var(--theme-color);
-            font-weight: 700;
-            text-decoration: underline;
-        }
-
-        .btn-read-more:hover {
-            color: var(--title-color);
-        }
-
-        .single-footer-nav ul {
-            display: flex;
-            gap: 18px;
-            justify-content: flex-end;
-            flex-wrap: wrap;
-        }
-
-        .single-footer-nav a {
-            color: #ffffff;
-        }
-
-        /* Asegura que todas las tarjetas de servicios tengan la misma altura */
-        .service-card {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            border-radius: 10px;
-        }
-
-        .service-card .box-img {
-            height: 400px;
-        }
-
-        .service-card .box-content {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-            padding-bottom: 76px;
-        }
-
-        .service-card .box-text {
-            flex: 1;
-        }
-
-        .feature-card {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            border-radius: 10px;
-        }
-
-        .feature-card .media-body {
-            flex: 1;
-        }
-
-        @media (max-width: 991px) {
-            .single-hero .hero-style1 {
-                padding-top: 120px;
-                padding-bottom: 120px;
-            }
-
-            .contact-panel {
-                padding: 30px 24px;
-            }
-
-            .single-footer-nav ul {
-                justify-content: center;
-            }
-        }
-    </style>
 
 </head>
 
 <body>
 
-    <div class="preloader">
-        <button class="ot-btn style3 preloaderCls" data-i18n="preloader.cancel">Cerrar carga</button>
+     <div class="preloader">
         <div class="preloader-inner">
             <span class="loader"></span>
         </div>
@@ -327,7 +123,7 @@
             <div class="ot-hero-bg" data-bg-src="assets/img/bg/bg.jpeg"></div>
             <div class="container z-index-common">
                 <div class="hero-style1">
-                    <div class="text-video-btn mb-30">
+                    <div class="text-video-btn mb-30 hero-brand-logo">
                         <img src="assets/img/hero/logo.jpeg" alt="Sterling Fresh logo">
                     </div>
                     <span class="hero-subtitle" data-i18n="hero.subtitle">80 años de excelencia agrícola</span>
@@ -435,7 +231,7 @@
                     </div>
                 </div>
                 <div class="col-xl-2">
-                    <div class="overview-image">
+                    <div class="overview-image2">
                         <img src="assets/img/team/certificado2.png" alt="Equipo Sterling Fresh">
                     </div>
                 </div>
@@ -615,7 +411,7 @@
                 </div>
             </div>
         </div>
-        <div class="copyright-wrap bg-style1" data-bg-src="assets/img/bg/copyright_bg_1.png">
+        <div class="copyright-wrap bg-style1">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-auto">
@@ -667,7 +463,6 @@
                 es: {
                     pageTitle: 'Sterling Fresh | Vegetales con calidad y frescura',
                     pageDescription: 'Sterling Fresh Inc. ofrece vegetales frescos para exportacion con produccion confiable y servicio comercial internacional.',
-                    'preloader.cancel': 'Cerrar carga',
                     'nav.home': 'Inicio',
                     'nav.services': 'Servicios',
                     'nav.contact': 'Contáctanos',
@@ -714,7 +509,6 @@
                 en: {
                     pageTitle: 'Sterling Fresh | Fresh vegetables for export markets',
                     pageDescription: 'Sterling Fresh Inc. supplies fresh vegetables with reliable production, export quality controls, and responsive commercial service.',
-                    'preloader.cancel': 'Close loader',
                     'nav.home': 'Home',
                     'nav.services': 'Services',
                     'nav.contact': 'Contact Us',
