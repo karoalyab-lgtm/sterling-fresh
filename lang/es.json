@@ -1,0 +1,267 @@
+{
+  "common": {
+    "nav.home": "Inicio",
+    "nav.services": "Servicios",
+    "nav.products": "Productos",
+    "nav.contact": "Contáctanos",
+    "footer.text": "Socio comercial para vegetales frescos con enfoque en abastecimiento constante, control de calidad y respuesta ágil para exportación.",
+    "footer.copy": "Copyright 2026 Sterling Fresh. Todos los derechos reservados."
+  },
+  "index": {
+    "pageTitle": "Sterling Fresh | Vegetales frescos para exportación desde México",
+    "pageDescription": "Sterling Fresh Inc. exporta vegetales frescos desde México con producción confiable, empaque estratégico y coordinación comercial para Estados Unidos e internacionales.",
+    "pageKeywords": "Sterling Fresh, vegetales frescos, exportación de vegetales, exportación agrícola, vegetales frescos México, brócoli, apio, zanahoria, empaque agrícola, distribución de vegetales",
+    "header.cta": "Contáctanos<i class=\"fas fa-chevrons-right ms-2\"></i>",
+    "hero.titleLine1": "Vegetales con calidad",
+    "hero.titleLine2": "y frescura",
+    "hero.text": "Desde Houston y con producción estratégica en México, Sterling Fresh impulsa una cadena confiable de abastecimiento para mercados que exigen consistencia y calidad.",
+    "hero.primaryCta": "Ver servicios<i class=\"fas fa-chevrons-right ms-2\"></i>",
+    "hero.secondaryCta": "Solicitar información<i class=\"fas fa-chevrons-right ms-2\"></i>",
+    "highlights.oneLabel": "Calidad",
+    "highlights.oneTitle": "Estándares altos de calidad y frescura",
+    "highlights.twoLabel": "Cobertura",
+    "highlights.twoTitle": "Producción todo el año con cobertura nacional e internacional",
+    "highlights.threeLabel": "Logística",
+    "highlights.threeTitle": "Empaque y distribución coordinados para exportación",
+    "overview.subtitle": "Sobre nosotros",
+    "overview.text1": "Sterling Fresh Inc. cuenta con una trayectoria de más de 80 años en la comercialización de productos agrícolas y una operación enfocada en responder con rapidez, calidad y eficiencia a compradores de Estados Unidos e internacionales.",
+    "overview.text2": "Con cultivos en Querétaro, un empaque estratégico en Guanajuato y coordinación comercial desde Houston, la empresa integra campo, empaque y logística para entregar vegetales frescos con trazabilidad y consistencia.",
+    "overview.text3": "Sterling Fresh cuenta con más de 800 hectáreas de cultivo en Querétaro, México, una región estratégica que permite producir durante todo el año bajo condiciones óptimas para abastecer programas de exportación con continuidad.",
+    "overview.text4": "Adicionalmente, la empresa opera un empaque en Guanajuato, clave para asegurar que cada envío cumpla con estándares altos de calidad, frescura, presentación y consistencia comercial para distintos mercados internacionales.",
+    "overview.text5": "Como parte de su estructura operativa, Sterling Fresh trabaja de la mano con su empresa hermana en México, Agrícola Hierba Santa, fortaleciendo su integración vertical y manteniendo control del proceso desde el campo hasta el cliente final.",
+    "overview.text6": "A lo largo de su historia, la compañía ha construido una reputación basada en confianza, consistencia y adaptación a las necesidades de sus clientes, combinando tradición, experiencia y tecnología para ofrecer productos del campo de alta calidad.",
+    "overview.readMore": "Leer más",
+    "overview.readLess": "Leer menos",
+    "overview.cta": "Hablar con el equipo<i class=\"fas fa-chevrons-right ms-2\"></i>",
+    "coverage.subtitle": "Cobertura operativa",
+    "coverage.title": "Una operación conectada entre México y Estados Unidos",
+    "coverage.text": "Producción estratégica en México, empaque coordinado y dirección comercial desde Houston para programas de exportación con continuidad.",
+    "coverage.optionA.point1.title": "Producción",
+    "coverage.optionA.point1.text": "Cultivo estratégico en Querétaro para continuidad y control de programa.",
+    "coverage.optionA.point2.title": "Empaque",
+    "coverage.optionA.point2.text": "Operación en Guanajuato para consolidar calidad, presentación y salida logística.",
+    "coverage.optionA.point3.title": "Comercial",
+    "coverage.optionA.point3.text": "Dirección comercial desde Houston para respuesta ágil hacia mercados internacionales.",
+    "coverage.statement": "Campo, empaque y dirección comercial integrados en una sola estructura para responder con claridad, velocidad y consistencia.",
+    "coverage.houston.title": "Houston",
+    "coverage.houston.text": "Coordinación comercial",
+    "coverage.guanajuato.title": "Guanajuato",
+    "coverage.guanajuato.text": "Empaque estratégico",
+    "coverage.queretaro.title": "Querétaro",
+    "coverage.queretaro.text": "Producción agrícola",
+    "coverage.countryUsa": "EE. UU.",
+    "coverage.countryMexico": "México",
+    "services.subtitle": "Servicios",
+    "services.title": "Soluciones comerciales y operativas para productos frescos",
+    "services.card1.title": "Abasto de vegetales frescos",
+    "services.card1.text": "Suministro de brócoli, zanahoria, cebolla, apio, maíz y otros productos con enfoque en frescura, volumen y continuidad.",
+    "services.card2.title": "Empaque y control de calidad",
+    "services.card2.text": "Procesos de selección, presentación y resguardo para que cada embarque llegue con especificaciones comerciales claras.",
+    "services.card3.title": "Coordinación logística de exportación",
+    "services.card3.text": "Planeación comercial y operativa para embarques confiables hacia clientes que necesitan cumplimiento y capacidad de respuesta.",
+    "services.cardCta": "Solicitar información<i class=\"far fa-chevrons-right ms-2\"></i>",
+    "contact.subtitle": "Contáctanos",
+    "contact.title": "Presencia estratégica para mercados internacionales.",
+    "contact.text": "Coordinamos nuestra operación desde Houston para asegurar una logística eficiente y un suministro constante de vegetales frescos hacia cualquier destino.",
+    "contact.address": "AV. COLINAS DEL CIMATARIO 301 QUERÉTARO, QUERÉTARO, 76090 México",
+    "contact.phone": "+1 (123) 456-7890"
+  },
+  "products": {
+    "pageTitle": "Sterling Fresh | Apio, brócoli y zanahoria para exportación",
+    "pageDescription": "Conoce la oferta de Sterling Fresh en apio iceless, brócoli asiático cortado con hielo y zanahoria para programas de exportación con calidad, frescura y continuidad operativa.",
+    "pageKeywords": "Sterling Fresh, apio iceless, brócoli asiático, zanahoria de exportación, vegetales frescos, exportación agrícola, fresh produce Mexico, celery exporter, broccoli export, carrot supplier",
+    "header.cta": "Hablar con el equipo<i class=\"fas fa-chevrons-right ms-2\"></i>",
+    "hero.kicker": "Portafolio de exportación",
+    "hero.title": "Tres productos clave para programas frescos y consistentes",
+    "hero.text": "La línea de productos de Sterling Fresh está enfocada en ejecución comercial, calidad estable y presentaciones listas para atender programas de retail, foodservice y distribución internacional.",
+    "catalog.subtitle": "Catálogo actual",
+    "catalog.title": "Productos listos para atender demanda de exportación",
+    "catalog.text": "Cada producto se trabaja con especificaciones claras de empaque, frescura y continuidad para responder con precisión a ventanas comerciales exigentes.",
+    "modal.presentation": "Presentación",
+    "modal.idealFor": "Ideal para",
+    "modal.specOverview": "Condición del producto",
+    "modal.details": "Detalles del producto",
+    "modal.specifications": "Especificaciones técnicas",
+    "meta.presentation": "Presentación",
+    "meta.idealFor": "Ideal para",
+    "product1.badge": "Fresh program",
+    "product1.name": "Apio Iceless",
+    "product1.summary": "Apio verde con estructura firme, color uniforme y manejo pensado para minimizar merma en procesos de distribución y anaquel.",
+    "product1.specOverview": "Tallos bien desarrollados, bien formados, bien recortados y compactos, libres de blackheart, pudrición blanda y daños causados por heladas, grietas de crecimiento, suciedad, marchitez, insectos o daños mecánicos.",
+    "product1.presentation": "Cajas para exportación con énfasis en frescura y consistencia visual.",
+    "product1.idealFor": "Retail, distribuidores regionales y programas de reposición frecuente.",
+    "product1.detail1": "Color verde a verde claro con presentación limpia y estructura compacta.",
+    "product1.detail2": "Enfriamiento postcosecha entre 34°F y 38°F con transporte a 34°F.",
+    "product1.detail3": "Capacidad de carga de 480, 640, 704 o 896 cajas por embarque, según programa.",
+    "product1.imageAlt": "Apio Iceless listo para exportación",
+    "product1.specs": [
+      {
+        "title": "Configuración 24 ct",
+        "rows": [
+          {
+            "label": "Longitud de nervio",
+            "value": "10 - 12 pulgadas"
+          },
+          {
+            "label": "Longitud de tallo",
+            "value": "12 - 14 pulgadas"
+          },
+          {
+            "label": "Circunferencia",
+            "value": "10.5 - 11.25 pulgadas"
+          },
+          {
+            "label": "Conteo por caja",
+            "value": "24 piezas"
+          }
+        ]
+      },
+      {
+        "title": "Configuración 30 ct",
+        "rows": [
+          {
+            "label": "Circunferencia",
+            "value": "11.5 - 13.25 pulgadas"
+          },
+          {
+            "label": "Conteo por caja",
+            "value": "30 piezas"
+          },
+          {
+            "label": "Peso neto",
+            "value": "50 lb por caja (22.6 kg), sin hielo ni cartón"
+          },
+          {
+            "label": "Carga total",
+            "value": "480 / 640 / 704 / 896 cajas por embarque"
+          }
+        ]
+      },
+      {
+        "title": "Manejo logístico",
+        "rows": [
+          {
+            "label": "Enfriamiento postcosecha",
+            "value": "34°F - 38°F"
+          },
+          {
+            "label": "Temperatura de transporte",
+            "value": "34°F"
+          },
+          {
+            "label": "Color",
+            "value": "Verde a verde claro"
+          }
+        ]
+      }
+    ],
+    "product2.name": "Brócoli asiático cortado con hielo",
+    "product2.summary": "Producto listo para cadenas que necesitan uniformidad, temperatura controlada y una salida operativa ágil para exportación.",
+    "product2.specOverview": "Coronas de brócoli refrigeradas empacadas con hielo. Se permiten defectos menores a moderados, ligero amarillamiento en proporción mínima, daño mecánico menor y no se permite pudrición ni insectos vivos.",
+    "product2.presentation": "Corte estándar con enfriamiento y empaque enfocados en conservar frescura.",
+    "product2.idealFor": "Foodservice, importadores y cuentas que priorizan proceso y uniformidad.",
+    "product2.detail1": "Color verde aceptable, característico de la variedad, con ligera tolerancia a amarillamiento mínimo.",
+    "product2.detail2": "Cabezas firmes y cerradas con enfriamiento en agua con hielo a 35°F (1.6°C).",
+    "product2.detail3": "Temperatura de almacenamiento y transporte de 33°F a 34°F con hielo triturado por caja y capa adicional sobre el pallet.",
+    "product2.imageAlt": "Brócoli asiático cortado con hielo para exportación",
+    "product2.specs": [
+      {
+        "title": "Second S",
+        "rows": [
+          {
+            "label": "Tamaño de corona",
+            "value": "4 - 6.5 pulgadas (10.16 - 16.51 cm)"
+          },
+          {
+            "label": "Longitud total",
+            "value": "Max. 1/2 pulgada (1.27 cm)"
+          },
+          {
+            "label": "Longitud de tallo",
+            "value": "Max. 1/2 pulgada (1.27 cm)"
+          },
+          {
+            "label": "Tallo hueco",
+            "value": "Max. 1/2 pulgada (1.27 cm)"
+          },
+          {
+            "label": "Conteo por caja",
+            "value": "25 - 35 coronas, según especificación del cliente"
+          },
+          {
+            "label": "Peso neto",
+            "value": "20 lb por caja (9.1 kg), sin hielo ni cartón"
+          }
+        ]
+      },
+      {
+        "title": "Second XL",
+        "rows": [
+          {
+            "label": "Tamaño de corona",
+            "value": "8 - 9 pulgadas (20.32 - 22.86 cm)"
+          },
+          {
+            "label": "Longitud total",
+            "value": "Max. 1/2 pulgada (1.27 cm)"
+          },
+          {
+            "label": "Longitud de tallo",
+            "value": "Max. 1/2 pulgada (1.27 cm)"
+          },
+          {
+            "label": "Tallo hueco",
+            "value": "Max. 1/2 pulgada (1.27 cm)"
+          },
+          {
+            "label": "Conteo por caja",
+            "value": "12 - 16 coronas, según especificación del cliente"
+          },
+          {
+            "label": "Peso neto",
+            "value": "20 lb por caja (9.1 kg), sin hielo ni cartón"
+          }
+        ]
+      },
+      {
+        "title": "Cadena de frío y logística",
+        "rows": [
+          {
+            "label": "Hielo por caja",
+            "value": "7 - 8 lb (3.2 - 3.6 kg) de hielo triturado"
+          },
+          {
+            "label": "Hielo adicional",
+            "value": "Capa extra de 3 - 4 pulgadas (7.6 - 10.1 cm) sobre el pallet"
+          },
+          {
+            "label": "Enfriamiento postcosecha",
+            "value": "35°F (1.6°C) usando agua con hielo"
+          },
+          {
+            "label": "Temperatura de almacenaje",
+            "value": "33°F - 34°F (0.5°C - 1.1°C)"
+          },
+          {
+            "label": "Temperatura de transporte",
+            "value": "33°F - 34°F (0.5°C - 1.1°C)"
+          },
+          {
+            "label": "Cajas por carga",
+            "value": "1,152 / 1,248 / 1,344 / 1,568"
+          }
+        ]
+      }
+    ],
+    "product3.badge": "Core volume",
+    "product3.name": "Zanahoria",
+    "product3.presentation": "Empaques configurables para distintos programas y necesidades de embarque.",
+    "product3.idealFor": "Retail, mayoreo y cuentas que requieren abastecimiento continuo.",
+    "product3.detail1": "Raíz con enfoque en uniformidad comercial y apariencia limpia.",
+    "product3.detail2": "Programa estable para responder a ventanas de alta demanda.",
+    "product3.detail3": "Opción versátil para compradores que necesitan volumen y disciplina operativa.",
+    "product3.imageAlt": "Zanahoria fresca de exportación",
+    "note.title": "Desarrollamos programas con foco comercial",
+    "note.text": "Si necesitas ajustar empaque, frecuencia de suministro o ventanas de entrega para alguno de estos productos, el equipo comercial puede revisar el programa contigo y definir una salida operativa clara."
+  }
+}

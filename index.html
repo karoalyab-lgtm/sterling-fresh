@@ -8,7 +8,7 @@
     <meta name="author" content="Seedo">
     <meta name="description"
         content="Sterling Fresh Inc. ofrece vegetales frescos para exportacion con produccion confiable y servicio comercial internacional.">
-    <meta name="keywords" content="Sterling Fresh, vegetales frescos, exportacion agricola, brocoli, zanahoria, maiz">
+    <meta name="keywords" content="Sterling Fresh, vegetales frescos, exportación agrícola, brócoli, zanahoria, maíz" data-i18n-content="pageKeywords">
     <meta name="robots" content="INDEX,FOLLOW">
 
     <!-- Mobile Specific Metas -->
@@ -47,7 +47,7 @@
 
 </head>
 
-<body>
+<body data-i18n-page="index">
 
      <div class="preloader">
         <div class="preloader-inner">
@@ -69,6 +69,7 @@
                     <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
                     <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
                     <li><a href="#contacto" data-i18n="nav.contact">Contáctanos</a></li>
+                    <li><a href="products.html" data-i18n="nav.products">Productos</a></li>
                 </ul>
             </div>
             <div class="lang-switch mobile-lang-switch">
@@ -97,6 +98,7 @@
                                     <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
                                     <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
                                     <li><a href="#contacto" data-i18n="nav.contact">Contáctanos</a></li>
+                                    <li><a href="products.html" data-i18n="nav.products">Productos</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -106,8 +108,6 @@
                                     <a href="#" class="lang-item active" data-lang="es">ES</a>
                                     <a href="#" class="lang-item" data-lang="en">EN</a>
                                 </div>
-                                <a href="#contacto" class="ot-btn style4" data-i18n-html="header.cta">Contáctanos<i
-                                        class="fas fa-chevrons-right ms-2"></i></a>
                             </div>
                             <button type="button" class="ot-menu-toggle d-inline-block d-lg-none"><i
                                     class="far fa-bars"></i></button>
@@ -126,7 +126,6 @@
                     <div class="text-video-btn mb-30 hero-brand-logo">
                         <img src="assets/img/hero/logo.jpeg" alt="Sterling Fresh logo">
                     </div>
-                    <span class="hero-subtitle" data-i18n="hero.subtitle">80 años de excelencia agrícola</span>
                     <h1 class="hero-title">
                         <span class="title1" data-i18n="hero.titleLine1">Vegetales con calidad</span>
                         <span class="title2" data-i18n="hero.titleLine2">y frescura</span>
@@ -239,6 +238,58 @@
         </div>
     </section>
 
+    <section class="coverage-showcase space-top space-extra-bottom">
+        <div class="container">
+            <div class="coverage-shell">
+                <div class="coverage-map-panel">
+                    <div class="coverage-map coverage-map--light coverage-map--final">
+                        <div class="coverage-map-art">
+                            <div class="coverage-land coverage-land--north"></div>
+                            <div class="coverage-route coverage-route--one"></div>
+                            <div class="coverage-route coverage-route--two"></div>
+
+                            <div class="coverage-node coverage-node--houston">
+                                <span class="coverage-dot"></span>
+                                <div class="coverage-label">
+                                    <strong data-i18n="coverage.houston.title">Houston</strong>
+                                    <span data-i18n="coverage.houston.text">Coordinacion comercial</span>
+                                </div>
+                            </div>
+
+                            <div class="coverage-node coverage-node--guanajuato">
+                                <span class="coverage-dot"></span>
+                                <div class="coverage-label">
+                                    <strong data-i18n="coverage.guanajuato.title">Guanajuato</strong>
+                                    <span data-i18n="coverage.guanajuato.text">Empaque estrategico</span>
+                                </div>
+                            </div>
+
+                            <div class="coverage-node coverage-node--queretaro">
+                                <span class="coverage-dot"></span>
+                                <div class="coverage-label">
+                                    <strong data-i18n="coverage.queretaro.title">Queretaro</strong>
+                                    <span data-i18n="coverage.queretaro.text">Produccion agricola</span>
+                                </div>
+                            </div>
+
+                            <div class="coverage-country coverage-country--usa" data-i18n="coverage.countryUsa">EEUU</div>
+                            <div class="coverage-country coverage-country--mexico" data-i18n="coverage.countryMexico">Mexico</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coverage-content-panel">
+                    <div class="title-area mb-20 coverage-showcase-title">
+                        <span class="sub-title"><img src="assets/img/theme-img/subtitle_icon.svg" alt="Icon"> <span
+                                data-i18n="coverage.subtitle">Cobertura operativa</span></span>
+                        <h2 class="sec-title" data-i18n="coverage.title">Una operacion conectada entre Mexico y Estados Unidos</h2>
+                        <p class="sec-text" data-i18n="coverage.text">Produccion estrategica en Mexico, empaque coordinado y direccion comercial desde Houston para programas de exportacion con continuidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="servicios" class="bg-smoke2 space">
         <div class="container">
             <div class="title-area text-center">
@@ -318,22 +369,24 @@
             </div> -->
 
             <div class="col-xl-12">
-                <div class="video-collage-container">
-                    <div class="collage-img img-main">
-                        <img src="assets/img/bg/sowing.jpeg" alt="Campo de Brócoli Sterling">
-                    </div>
+                <div class="services-video-block">
+                    <div class="video-collage-container">
+                        <div class="collage-img img-main">
+                            <img src="assets/img/bg/sowing.jpeg" alt="Campo de Brócoli Sterling">
+                        </div>
 
-                    <div class="collage-img img-secondary">
-                        <img src="assets/img/bg/fl.jpeg" alt="Empaque en Guanajuato">
-                    </div>
+                        <div class="collage-img img-secondary">
+                            <img src="assets/img/bg/fl.jpeg" alt="Empaque en Guanajuato">
+                        </div>
 
-                    <div class="collage-img img-tertiary">
-                        <img src="assets/img/bg/box.jpeg" alt="Logística de Exportación">
+                        <div class="collage-img img-tertiary">
+                            <img src="assets/img/bg/box.jpeg" alt="Logística de Exportación">
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=tu_video_aqui" class="play-btn popup-video">
+                            <i class="fas fa-play"></i>
+                            <span class="ripple"></span>
+                        </a>
                     </div>
-                    <a href="https://www.youtube.com/watch?v=tu_video_aqui" class="play-btn popup-video">
-                        <i class="fas fa-play"></i>
-                        <span class="ripple"></span>
-                    </a>
                 </div>
             </div>
         </div>
@@ -456,183 +509,42 @@
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/i18n.js"></script>
     <script>
         (function () {
             var isOverviewExpanded = false;
-            var translations = {
-                es: {
-                    pageTitle: 'Sterling Fresh | Vegetales con calidad y frescura',
-                    pageDescription: 'Sterling Fresh Inc. ofrece vegetales frescos para exportacion con produccion confiable y servicio comercial internacional.',
-                    'nav.home': 'Inicio',
-                    'nav.services': 'Servicios',
-                    'nav.contact': 'Contáctanos',
-                    'header.cta': 'Contáctanos<i class="fas fa-chevrons-right ms-2"></i>',
-                    'hero.subtitle': '80 años de excelencia agrícola',
-                    'hero.titleLine1': 'Vegetales con calidad',
-                    'hero.titleLine2': 'y frescura',
-                    'hero.text': 'Desde Houston y con producción estratégica en México, Sterling Fresh impulsa una cadena confiable de abastecimiento para mercados que exigen consistencia y calidad.',
-                    'hero.primaryCta': 'Ver servicios<i class="fas fa-chevrons-right ms-2"></i>',
-                    'hero.secondaryCta': 'Solicitar información<i class="fas fa-chevrons-right ms-2"></i>',
-                    'highlights.oneLabel': 'Calidad',
-                    'highlights.oneTitle': 'Estándares altos de calidady frescura',
-                    'highlights.twoLabel': 'Cobertura',
-                    'highlights.twoTitle': 'Producción todo el año con cobertura nacional e internacional',
-                    'highlights.threeLabel': 'Logística',
-                    'highlights.threeTitle': 'Empaque y distribución coordinados para exportación',
-                    'overview.subtitle': 'Sobre nosotros',
-                    'overview.text1': 'Sterling Fresh Inc. cuenta con una trayectoria de más de 80 años en la comercialización de productos agrícolas y una operación enfocada en responder con rapidez, calidad y eficiencia a compradores de Estados Unidos e internacionales.',
-                    'overview.text2': 'Con cultivos en Querétaro, un empaque estratégico en Guanajuato y coordinación comercial desde Houston, la empresa integra campo, empaque y logística para entregar vegetales frescos con trazabilidad y consistencia.',
-                    'overview.text3': 'Sterling Fresh cuenta con más de 800 hectáreas de cultivo en Querétaro, México, una región estratégica que permite producir durante todo el año bajo condiciones óptimas para abastecer programas de exportación con continuidad.',
-                    'overview.text4': 'Adicionalmente, la empresa opera un empaque en Guanajuato, clave para asegurar que cada envío cumpla con estándares altos de calidad, frescura, presentación y consistencia comercial para distintos mercados internacionales.',
-                    'overview.text5': 'Como parte de su estructura operativa, Sterling Fresh trabaja de la mano con su empresa hermana en México, Agrícola Hierba Santa, fortaleciendo su integración vertical y manteniendo control del proceso desde el campo hasta el cliente final.',
-                    'overview.text6': 'A lo largo de su historia, la compañía ha construido una reputación basada en confianza, consistencia y adaptación a las necesidades de sus clientes, combinando tradición, experiencia y tecnología para ofrecer productos del campo de alta calidad.',
-                    'overview.readMore': 'Leer más',
-                    'overview.readLess': 'Leer menos',
-                    'overview.cta': 'Hablar con el equipo<i class="fas fa-chevrons-right ms-2"></i>',
-                    'services.subtitle': 'Servicios',
-                    'services.title': 'Soluciones comerciales y operativas para productos frescos',
-                    'services.card1.title': 'Abasto de vegetales frescos',
-                    'services.card1.text': 'Suministro de brócoli, zanahoria, cebolla, apio, maíz y otros productos con enfoque en frescura, volumen y continuidad.',
-                    'services.card2.title': 'Empaque y control de calidad',
-                    'services.card2.text': 'Procesos de selección, presentación y resguardo para que cada embarque llegue con especificaciones comerciales claras.',
-                    'services.card3.title': 'Coordinación logística de exportación',
-                    'services.card3.text': 'Planeación comercial y operativa para embarques confiables hacia clientes que necesitan cumplimiento y capacidad de respuesta.',
-                    'services.cardCta': 'Solicitar información<i class="far fa-chevrons-right ms-2"></i>',
-                    'contact.subtitle': 'Contáctanos',
-                    'contact.title': 'Presencia estratégica para mercados internacionales.',
-                    'contact.text': 'Coordinamos nuestra operación desde Houston para asegurar una logística eficiente y un suministro constante de vegetales frescos hacia cualquier destino.',
-                    'contact.address': 'AV. COLINAS DEL CIMATARIO 301 QUERETARO, QUERETARO, 76090 Mexico',
-                    'footer.text': 'Socio comercial para vegetales frescos con enfoque en abastecimiento constante, control de calidad y respuesta ágil para exportación.',
-                    'footer.copy': 'Copyright 2026 Sterling Fresh. Todos los derechos reservados.',
-                    'overview.title2': 'Qué hacemos'
-                },
-                en: {
-                    pageTitle: 'Sterling Fresh | Fresh vegetables for export markets',
-                    pageDescription: 'Sterling Fresh Inc. supplies fresh vegetables with reliable production, export quality controls, and responsive commercial service.',
-                    'nav.home': 'Home',
-                    'nav.services': 'Services',
-                    'nav.contact': 'Contact Us',
-                    'header.cta': 'Contact Us<i class="fas fa-chevrons-right ms-2"></i>',
-                    'hero.subtitle': '80 years of agricultural excellence',
-                    'hero.titleLine1': 'Vegetables with quality',
-                    'hero.titleLine2': 'and freshness for export',
-                    'hero.text': 'From Houston and with strategic production in Mexico, Sterling Fresh supports a reliable supply chain for markets that require consistency, food safety, and on-time deliveries.',
-                    'hero.primaryCta': 'View services<i class="fas fa-chevrons-right ms-2"></i>',
-                    'hero.secondaryCta': 'Request information<i class="fas fa-chevrons-right ms-2"></i>',
-                    'highlights.oneLabel': 'Quality',
-                    'highlights.oneTitle': 'High standards for food safety and freshness',
-                    'highlights.twoLabel': 'Coverage',
-                    'highlights.twoTitle': 'Year-round production for demanding markets',
-                    'highlights.threeLabel': 'Logistics',
-                    'highlights.threeTitle': 'Packing and distribution aligned for export',
-                    'overview.subtitle': 'About Us',
-                    'overview.title': 'An agricultural operation built for dependable supply',
-                    'overview.text1': 'Sterling Fresh Inc. brings more than 80 years of experience in agricultural trading, with operations designed to serve US and international buyers with speed, quality, and efficiency.',
-                    'overview.text2': 'With growing operations in Queretaro, a strategic packing facility in Guanajuato, and commercial coordination from Houston, the company integrates field, packing, and logistics to deliver fresh vegetables with traceability and consistency.',
-                    'overview.text3': 'Sterling Fresh operates more than 800 hectares of farmland in Queretaro, Mexico, a strategic region that supports year-round production under strong growing conditions for export programs.',
-                    'overview.text4': 'The company also runs a packing operation in Guanajuato, which plays a key role in ensuring each shipment meets high standards for quality, freshness, presentation, and commercial consistency across international markets.',
-                    'overview.text5': 'As part of its operating structure, Sterling Fresh works closely with its sister company in Mexico, Agricola Hierba Santa, strengthening vertical integration and maintaining control from the field to the final customer.',
-                    'overview.text6': 'Over time, the company has built a reputation based on trust, consistency, and adaptability, combining tradition, experience, and technology to deliver high-quality produce.',
-                    'overview.readMore': 'Read more',
-                    'overview.readLess': 'Read less',
-                    'overview.cta': 'Talk to the team<i class="fas fa-chevrons-right ms-2"></i>',
-                    'services.subtitle': 'Services',
-                    'services.title': 'Commercial and operational solutions for fresh produce',
-                    'services.card1.title': 'Fresh vegetable supply',
-                    'services.card1.text': 'Supply of broccoli, carrots, onions, celery, corn, and more with a focus on freshness, volume, and dependable continuity.',
-                    'services.card2.title': 'Packing and quality control',
-                    'services.card2.text': 'Selection, presentation, and product care processes that keep each shipment aligned with clear commercial specifications.',
-                    'services.card3.title': 'Export logistics coordination',
-                    'services.card3.text': 'Commercial and operational planning for reliable shipments to customers who need execution discipline and quick response.',
-                    'services.cardCta': 'Request information<i class="far fa-chevrons-right ms-2"></i>',
-                    'contact.subtitle': 'Contact Us',
-                    'contact.title': 'Strategic Presence for Global Markets',
-                    'contact.text': 'We coordinate our operations from Houston to ensure efficient logistics and a constant supply of fresh vegetables to any destination.',
-                    'contact.address': 'Houston, Texas, with strategic production in Queretaro and packing operations in Guanajuato, Mexico.',
-                    'footer.text': 'Commercial partner for fresh vegetables with a focus on steady supply, quality control, and agile export response.',
-                    'footer.copy': 'Copyright 2026 Sterling Fresh. All rights reserved.',
-                    'overview.title2': 'What we do'
-                }
-            };
 
-            function applyLanguage(lang) {
-                var selected = translations[lang] ? lang : 'es';
-                var current = translations[selected];
-
-                document.documentElement.lang = selected;
-                document.title = current.pageTitle;
-
-                var metaDescription = document.querySelector('meta[name="description"]');
-                if (metaDescription) {
-                    metaDescription.setAttribute('content', current.pageDescription);
-                }
-
-                document.querySelectorAll('[data-i18n]').forEach(function (element) {
-                    var key = element.dataset.i18n;
-                    if (current[key]) {
-                        element.textContent = current[key];
-                    }
-                });
-
-                document.querySelectorAll('[data-i18n-html]').forEach(function (element) {
-                    var key = element.dataset.i18nHtml;
-                    if (current[key]) {
-                        element.innerHTML = current[key];
-                    }
-                });
-
-                document.querySelectorAll('[data-i18n-placeholder]').forEach(function (element) {
-                    var key = element.dataset.i18nPlaceholder;
-                    if (current[key]) {
-                        element.setAttribute('placeholder', current[key]);
-                    }
-                });
-
-                document.querySelectorAll('.lang-item').forEach(function (button) {
-                    button.classList.toggle('active', button.dataset.lang === selected);
-                });
-
-                updateReadMoreLabel(current);
-
-                localStorage.setItem('site-language', selected);
-            }
-
-            function updateReadMoreLabel(current) {
+            function updateReadMoreLabel() {
                 var readMoreButton = document.getElementById('readMoreBtn');
-                if (!readMoreButton) {
+                if (!readMoreButton || !globalThis.siteI18n) {
                     return;
                 }
 
-                readMoreButton.textContent = isOverviewExpanded ? current['overview.readLess'] : current['overview.readMore'];
+                var nextLabel = isOverviewExpanded ? globalThis.siteI18n.getValue('overview.readLess') : globalThis.siteI18n.getValue('overview.readMore');
+                if (typeof nextLabel === 'string') {
+                    readMoreButton.textContent = nextLabel;
+                }
             }
 
             function toggleOverviewText() {
                 var overviewCopy = document.getElementById('overviewCopy');
-                var selected = localStorage.getItem('site-language') || 'es';
-                var current = translations[selected] ? translations[selected] : translations.es;
-
                 isOverviewExpanded = !isOverviewExpanded;
 
                 if (overviewCopy) {
                     overviewCopy.classList.toggle('is-expanded', isOverviewExpanded);
                 }
 
-                updateReadMoreLabel(current);
+                updateReadMoreLabel();
             }
 
-            document.querySelectorAll('.lang-item').forEach(function (button) {
-                button.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    applyLanguage(button.dataset.lang);
-                });
-            });
+            globalThis.addEventListener('site-language-changed', updateReadMoreLabel);
 
             var readMoreButton = document.getElementById('readMoreBtn');
             if (readMoreButton) {
                 readMoreButton.addEventListener('click', toggleOverviewText);
             }
 
-            applyLanguage(localStorage.getItem('site-language') || 'es');
+            updateReadMoreLabel();
         })();
     </script>
 

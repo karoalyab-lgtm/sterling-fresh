@@ -1,0 +1,268 @@
+{
+  "common": {
+    "nav.home": "Home",
+    "nav.services": "Services",
+    "nav.products": "Products",
+    "nav.contact": "Contact Us",
+    "footer.text": "Commercial partner for fresh vegetables with a focus on steady supply, quality control, and agile export response.",
+    "footer.copy": "Copyright 2026 Sterling Fresh. All rights reserved."
+  },
+  "index": {
+    "pageTitle": "Sterling Fresh | Fresh vegetables for export from Mexico",
+    "pageDescription": "Sterling Fresh Inc. exports fresh vegetables from Mexico with reliable production, strategic packing, and commercial coordination for U.S. and international markets.",
+    "pageKeywords": "Sterling Fresh, fresh vegetables, vegetable exporter Mexico, agricultural exports, broccoli supplier, celery exporter, carrot supplier, fresh produce Mexico, export packing, vegetable distribution",
+    "header.cta": "Contact Us<i class=\"fas fa-chevrons-right ms-2\"></i>",
+    "hero.titleLine1": "Vegetables with quality",
+    "hero.titleLine2": "and freshness",
+    "hero.text": "From Houston and with strategic production in Mexico, Sterling Fresh supports a reliable supply chain for markets that require consistency and quality.",
+    "hero.primaryCta": "View services<i class=\"fas fa-chevrons-right ms-2\"></i>",
+    "hero.secondaryCta": "Request information<i class=\"fas fa-chevrons-right ms-2\"></i>",
+    "highlights.oneLabel": "Quality",
+    "highlights.oneTitle": "High standards of quality and freshness",
+    "highlights.twoLabel": "Coverage",
+    "highlights.twoTitle": "Year-round production with national and international coverage",
+    "highlights.threeLabel": "Logistics",
+    "highlights.threeTitle": "Packing and distribution coordinated for export",
+    "overview.subtitle": "About us",
+    "overview.text1": "Sterling Fresh Inc. brings more than 80 years of experience in agricultural trading, with an operation focused on serving United States and international buyers with speed, quality, and efficiency.",
+    "overview.text2": "With crops in Queretaro, a strategic packing operation in Guanajuato, and commercial coordination from Houston, the company integrates field, packing, and logistics to deliver fresh vegetables with traceability and consistency.",
+    "overview.text3": "Sterling Fresh operates more than 800 hectares of farmland in Queretaro, Mexico, a strategic region that enables year-round production under favorable conditions for export programs.",
+    "overview.text4": "In addition, the company operates a packing facility in Guanajuato, key to ensuring every shipment meets high standards for quality, freshness, presentation, and commercial consistency across international markets.",
+    "overview.text5": "As part of its operating structure, Sterling Fresh works hand in hand with its sister company in Mexico, Agricola Hierba Santa, strengthening vertical integration and maintaining control from the field to the final customer.",
+    "overview.text6": "Throughout its history, the company has built a reputation based on trust, consistency, and adaptability, combining tradition, experience, and technology to deliver high-quality produce.",
+    "overview.readMore": "Read more",
+    "overview.readLess": "Read less",
+    "overview.cta": "Talk to the team<i class=\"fas fa-chevrons-right ms-2\"></i>",
+    "coverage.subtitle": "Operational coverage",
+    "coverage.title": "One connected operation between Mexico and the United States",
+    "coverage.text": "Strategic production in Mexico, coordinated packing, and commercial direction from Houston for export programs that require continuity.",
+    "coverage.optionA.point1.title": "Production",
+    "coverage.optionA.point1.text": "Strategic cultivation in Queretaro for continuity and program control.",
+    "coverage.optionA.point2.title": "Packing",
+    "coverage.optionA.point2.text": "Operation in Guanajuato to consolidate quality, presentation, and logistics output.",
+    "coverage.optionA.point3.title": "Commercial",
+    "coverage.optionA.point3.text": "Commercial direction from Houston for agile response to international markets.",
+    "coverage.statement": "Field, packing, and commercial direction integrated into one structure built to respond with clarity, speed, and consistency.",
+    "coverage.houston.title": "Houston",
+    "coverage.houston.text": "Commercial coordination",
+    "coverage.guanajuato.title": "Guanajuato",
+    "coverage.guanajuato.text": "Strategic packing",
+    "coverage.queretaro.title": "Queretaro",
+    "coverage.queretaro.text": "Agricultural production",
+    "coverage.countryUsa": "USA",
+    "coverage.countryMexico": "Mexico",
+    "services.subtitle": "Services",
+    "services.title": "Commercial and operational solutions for fresh produce",
+    "services.card1.title": "Fresh vegetable supply",
+    "services.card1.text": "Supply of broccoli, carrots, onions, celery, corn, and other products with a focus on freshness, volume, and continuity.",
+    "services.card2.title": "Packing and quality control",
+    "services.card2.text": "Selection, presentation, and protection processes so every shipment arrives with clear commercial specifications.",
+    "services.card3.title": "Export logistics coordination",
+    "services.card3.text": "Commercial and operational planning for reliable shipments to customers who require execution and responsiveness.",
+    "services.cardCta": "Request information<i class=\"far fa-chevrons-right ms-2\"></i>",
+    "contact.subtitle": "Contact us",
+    "contact.title": "Strategic presence for international markets.",
+    "contact.text": "We coordinate our operation from Houston to ensure efficient logistics and a steady supply of fresh vegetables to any destination.",
+    "contact.address": "AV. COLINAS DEL CIMATARIO 301 QUERETARO, QUERETARO, 76090 Mexico",
+    "contact.phone": "+1 (123) 456-7890"
+  },
+  "products": {
+    "pageTitle": "Sterling Fresh | Celery, broccoli, and carrots for export",
+    "pageDescription": "Explore Sterling Fresh offerings in Iceless Celery, Iced Asian Cut Broccoli, and Carrots for export programs focused on quality, freshness, and operational continuity.",
+    "pageKeywords": "Sterling Fresh, Iceless Celery, Asian Cut Broccoli, carrots for export, fresh produce exporter, celery supplier, broccoli export, carrot supplier, vegetable export programs, fresh vegetables Mexico",
+    "header.cta": "Talk to the team<i class=\"fas fa-chevrons-right ms-2\"></i>",
+    "hero.kicker": "Export portfolio",
+    "hero.title": "Three key products for fresh and consistent programs",
+    "hero.text": "Sterling Fresh builds its product lineup around commercial execution, stable quality, and presentations ready for retail, foodservice, and international distribution programs.",
+    "catalog.subtitle": "Current catalog",
+    "catalog.title": "Products ready to support export demand",
+    "catalog.text": "Each product is managed with clear packing, freshness, and continuity standards to respond precisely to demanding commercial windows.",
+    "modal.presentation": "Presentation",
+    "modal.idealFor": "Ideal for",
+    "modal.specOverview": "Product condition",
+    "modal.details": "Product details",
+    "modal.specifications": "Technical specifications",
+    "meta.presentation": "Presentation",
+    "meta.idealFor": "Ideal for",
+    "product1.badge": "Fresh program",
+    "product1.name": "Iceless Celery",
+    "product1.summary": "Green celery with firm structure, even color, and handling designed to reduce shrink in distribution and shelf programs.",
+    "product1.specOverview": "Well-developed, well-formed, well-trimmed, compact stalks, free from blackheart and soft rot and free from damage caused by frost, growth cracks, horizontal cracks, thorny branches, seed stalks, suckers, dirt, bends, wilting, shrivel, insects, diseases, or mechanical damage.",
+    "product1.presentation": "Export cartons focused on freshness retention and visual consistency.",
+    "product1.idealFor": "Retail, regional distributors, and frequent replenishment programs.",
+    "product1.detail1": "Green to light green color with clean presentation and compact structure.",
+    "product1.detail2": "Post-harvest cooling between 34°F and 38°F with transport at 34°F.",
+    "product1.detail3": "Load capacity of 480, 640, 704, or 896 cases depending on the program.",
+    "product1.imageAlt": "Iceless Celery prepared for export",
+    "product1.specs": [
+      {
+        "title": "24 ct configuration",
+        "rows": [
+          {
+            "label": "Midrib length",
+            "value": "10 - 12 inches"
+          },
+          {
+            "label": "Stem length",
+            "value": "12 - 14 inches"
+          },
+          {
+            "label": "Circumference",
+            "value": "10.5 - 11.25 inches"
+          },
+          {
+            "label": "Count per case",
+            "value": "24 count"
+          }
+        ]
+      },
+      {
+        "title": "30 ct configuration",
+        "rows": [
+          {
+            "label": "Circumference",
+            "value": "11.5 - 13.25 inches"
+          },
+          {
+            "label": "Count per case",
+            "value": "30 count"
+          },
+          {
+            "label": "Net weight",
+            "value": "50 lb per case (22.6 kg), excluding ice and carton"
+          },
+          {
+            "label": "Total load",
+            "value": "480 / 640 / 704 / 896 cases per load"
+          }
+        ]
+      },
+      {
+        "title": "Logistics handling",
+        "rows": [
+          {
+            "label": "Post-harvest cooling",
+            "value": "34°F - 38°F"
+          },
+          {
+            "label": "Transport temperature",
+            "value": "34°F"
+          },
+          {
+            "label": "Color",
+            "value": "Green to light green"
+          }
+        ]
+      }
+    ],
+    "product2.name": "Iced Asian Cut Broccoli",
+    "product2.summary": "A ready product for accounts that need uniformity, controlled temperature, and agile operational execution for export.",
+    "product2.specOverview": "Refrigerated broccoli crowns packed with ice. Minor to moderate defects permitted, acceptable green color with slight yellowing tolerated in minimal proportion, minor mechanical damage allowed, and no rot or live insects.",
+    "product2.presentation": "Standard cut with cooling and packing designed to protect freshness.",
+    "product2.idealFor": "Foodservice, importers, and accounts that prioritize process discipline and uniformity.",
+    "product2.detail1": "Acceptable green color characteristic of the variety, with only minimal yellowing tolerated.",
+    "product2.detail2": "Firm, tight heads cooled with ice-water at 35°F (1.6°C).",
+    "product2.detail3": "Storage and transport at 33°F to 34°F with crushed ice per case and an extra ice layer over pallets.",
+    "product2.imageAlt": "Iced Asian Cut Broccoli for export",
+    "product2.specs": [
+      {
+        "title": "Second S",
+        "rows": [
+          {
+            "label": "Crown size",
+            "value": "4 - 6.5 inches (10.16 - 16.51 cm)"
+          },
+          {
+            "label": "Overall length",
+            "value": "Max. 1/2 inch (1.27 cm)"
+          },
+          {
+            "label": "Stem length",
+            "value": "Max. 1/2 inch (1.27 cm)"
+          },
+          {
+            "label": "Hollow stem",
+            "value": "Max. 1/2 inch (1.27 cm)"
+          },
+          {
+            "label": "Count per case",
+            "value": "25 - 35 crowns, as specified by customer"
+          },
+          {
+            "label": "Net weight",
+            "value": "20 lb per case (9.1 kg), excluding ice and carton"
+          }
+        ]
+      },
+      {
+        "title": "Second XL",
+        "rows": [
+          {
+            "label": "Crown size",
+            "value": "8 - 9 inches (20.32 - 22.86 cm)"
+          },
+          {
+            "label": "Overall length",
+            "value": "Max. 1/2 inch (1.27 cm)"
+          },
+          {
+            "label": "Stem length",
+            "value": "Max. 1/2 inch (1.27 cm)"
+          },
+          {
+            "label": "Hollow stem",
+            "value": "Max. 1/2 inch (1.27 cm)"
+          },
+          {
+            "label": "Count per case",
+            "value": "12 - 16 crowns, as specified by customer"
+          },
+          {
+            "label": "Net weight",
+            "value": "20 lb per case (9.1 kg), excluding ice and carton"
+          }
+        ]
+      },
+      {
+        "title": "Cold chain and logistics",
+        "rows": [
+          {
+            "label": "Ice per case",
+            "value": "7 - 8 lb (3.2 - 3.6 kg) crushed ice"
+          },
+          {
+            "label": "Additional ice",
+            "value": "Extra 3 - 4 inch (7.6 - 10.1 cm) layer of ice over all pallets"
+          },
+          {
+            "label": "Post-harvest cooling",
+            "value": "35°F (1.6°C) using ice-water"
+          },
+          {
+            "label": "Storage temperature",
+            "value": "33°F - 34°F (0.5°C - 1.1°C)"
+          },
+          {
+            "label": "Transport temperature",
+            "value": "33°F - 34°F (0.5°C - 1.1°C)"
+          },
+          {
+            "label": "Total cases per load",
+            "value": "1,152 / 1,248 / 1,344 / 1,568"
+          }
+        ]
+      }
+    ],
+    "product3.badge": "Core volume",
+    "product3.name": "Carrots",
+    "product3.summary": "Fresh carrots designed for dependable volume, solid presentation, and operational continuity for customers with steady rotation.",
+    "product3.presentation": "Configurable packs for different programs and shipping requirements.",
+    "product3.idealFor": "Retail, wholesale, and accounts that require continuous supply.",
+    "product3.detail1": "Root profile focused on commercial uniformity and clean appearance.",
+    "product3.detail2": "Stable program built to answer high-demand windows.",
+    "product3.detail3": "A versatile option for buyers who need volume and execution discipline.",
+    "product3.imageAlt": "Fresh export carrots",
+    "note.title": "We build programs with commercial focus",
+    "note.text": "If you need to adjust packing, supply frequency, or delivery windows for any of these products, the commercial team can review the program with you and define a clear operational path."
+  }
+}
