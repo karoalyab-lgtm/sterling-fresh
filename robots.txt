@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sterlingfreshusa.com/sitemap.xml
