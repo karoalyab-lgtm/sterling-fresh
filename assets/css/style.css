@@ -1067,6 +1067,19 @@ textarea.is-invalid {
   max-width: 185px;
 }
 
+.ot-menu-wrapper .mobile-logo .header-brand,
+.ot-menu-wrapper .mobile-logo .header-brand:hover,
+.ot-menu-wrapper .mobile-logo .header-brand:focus,
+.ot-menu-wrapper .mobile-logo .header-brand:active,
+.ot-menu-wrapper .mobile-logo .header-brand:visited {
+  color: var(--title-color);
+  text-shadow: none;
+}
+
+.ot-menu-wrapper .mobile-logo .header-brand img {
+  border-color: rgba(15, 37, 18, 0.18);
+}
+
 .ot-menu-wrapper .ot-menu-toggle {
   border: none;
   font-size: 22px;
@@ -12865,6 +12878,21 @@ html {
 .mobile-lang-switch {
   margin-top: 24px;
   justify-content: center;
+}
+
+.mobile-lang-switch .lang-item {
+  border-color: rgba(15, 37, 18, 0.16);
+  background-color: #ffffff;
+  color: var(--title-color);
+}
+
+.mobile-lang-switch .lang-item.active,
+.mobile-lang-switch .lang-item:hover {
+  color: #ffffff;
+}
+
+.mobile-lang-switch .separator {
+  color: rgba(15, 37, 18, 0.35);
 }
 
 .single-hero .ot-hero-bg::before {

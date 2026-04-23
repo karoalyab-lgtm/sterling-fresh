@@ -52,6 +52,27 @@
         return button.getAttribute('data-lang-switch') || button.getAttribute('data-lang');
     }
 
+    function handleSwitcherClick(event) {
+        var button = event.target.closest('[data-lang-switch], .lang-item[data-lang]');
+        if (!button) {
+            return;
+        }
+
+        event.preventDefault();
+        setLanguage(getButtonLanguage(button));
+    }
+
+    function bindSwitcherButtons() {
+        Array.prototype.forEach.call(getSwitcherButtons(), function (button) {
+            if (button.dataset.i18nBound === 'true') {
+                return;
+            }
+
+            button.addEventListener('click', handleSwitcherClick);
+            button.dataset.i18nBound = 'true';
+        });
+    }
+
     function updateSwitcherState(lang) {
         Array.prototype.forEach.call(getSwitcherButtons(), function (button) {
             var isActive = getButtonLanguage(button) === lang;
@@ -127,6 +148,7 @@
         document.documentElement.lang = lang;
         currentLanguage = lang;
         currentTranslations = translations;
+        bindSwitcherButtons();
         updateSwitcherState(lang);
 
         globalThis.dispatchEvent(new CustomEvent('site-language-changed', {
@@ -178,15 +200,8 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-        document.addEventListener('click', function (event) {
-            var button = event.target.closest('[data-lang-switch], .lang-item[data-lang]');
-            if (!button) {
-                return;
-            }
-
-            event.preventDefault();
-            setLanguage(getButtonLanguage(button));
-        });
+        bindSwitcherButtons();
+        document.addEventListener('click', handleSwitcherClick);
 
         setLanguage(getInitialLanguage());
     });
