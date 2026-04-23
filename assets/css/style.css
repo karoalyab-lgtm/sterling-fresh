@@ -13511,6 +13511,149 @@ html {
   }
 }
 
+@media (max-width: 575px) {
+  .coverage-map--final {
+    min-height: 320px;
+  }
+
+  .coverage-map-art {
+    width: 248px;
+    height: 208px;
+    transform: translate(-50%, -42%);
+  }
+
+  .coverage-land--north {
+    top: 30px;
+    left: 18px;
+    width: 164px;
+    height: 118px;
+  }
+
+  .coverage-node .coverage-label {
+    min-width: 88px;
+    max-width: 96px;
+  }
+
+  .coverage-label strong {
+    font-size: 11px;
+    line-height: 1.15;
+  }
+
+  .coverage-label span {
+    font-size: 9px;
+    line-height: 1.25;
+  }
+
+  .coverage-node--houston {
+    top: 96px;
+    left: 186px;
+  }
+
+  .coverage-node--houston .coverage-label {
+    top: -8px;
+    left: -92px;
+    text-align: right;
+  }
+
+  .coverage-node--guanajuato {
+    top: 82px;
+    left: 22px;
+  }
+
+  .coverage-node--guanajuato .coverage-label {
+    top: -8px;
+    left: 18px;
+  }
+
+  .coverage-node--queretaro {
+    top: 170px;
+    left: 22px;
+  }
+
+  .coverage-node--queretaro .coverage-label {
+    top: 14px;
+    left: 18px;
+  }
+
+  .coverage-country {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+
+  .coverage-country--usa {
+    top: 54px;
+    left: 190px;
+  }
+
+  .coverage-country--mexico {
+    top: 198px;
+    left: 28px;
+  }
+
+  .coverage-link--guanajuato {
+    top: 94px;
+    left: 36px;
+    width: 142px;
+    transform: rotate(3deg);
+  }
+
+  .coverage-link--queretaro {
+    top: 176px;
+    left: 36px;
+    width: 148px;
+    transform: rotate(-28deg);
+  }
+}
+
+@media (max-width: 420px) {
+  .coverage-map--final {
+    min-height: 300px;
+  }
+
+  .coverage-map-art {
+    width: 220px;
+    height: 188px;
+  }
+
+  .coverage-land--north {
+    width: 148px;
+    height: 104px;
+  }
+
+  .coverage-node .coverage-label {
+    min-width: 80px;
+    max-width: 84px;
+  }
+
+  .coverage-label strong {
+    font-size: 10px;
+  }
+
+  .coverage-label span {
+    font-size: 8px;
+  }
+
+  .coverage-node--houston {
+    left: 164px;
+  }
+
+  .coverage-node--houston .coverage-label {
+    left: -84px;
+  }
+
+  .coverage-country--usa {
+    left: 168px;
+  }
+
+  .coverage-link--guanajuato {
+    width: 124px;
+  }
+
+  .coverage-link--queretaro {
+    width: 132px;
+  }
+}
+
 .hero-3 {
   margin-top: 40px;
   /* Large devices */
@@ -13614,7 +13757,7 @@ html {
     left: 150px
   }
   .coverage-country--mexico {
-    left:-100px;
+    left:-60px;
   }
 }
 
