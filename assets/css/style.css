@@ -4293,8 +4293,8 @@ a.text-theme:hover,
   top: 0;
   right: 0;
   left: 0;
-  background-color: var(--white-color);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07);
+  background-color: transparent;
+  box-shadow: none;
   -webkit-animation: stickyAni 0.4s ease-in-out;
           animation: stickyAni 0.4s ease-in-out;
 }
@@ -4330,12 +4330,12 @@ a.text-theme:hover,
   position: relative;
   font-weight: 600;
   font-size: 16px;
-  color: var(--title-color);
+  color: rgba(255, 255, 255, 0.94);
   text-transform: uppercase;
 }
 
 .main-menu a:hover {
-  color: var(--theme-color);
+  color: #d7e8df;
 }
 
 .main-menu > ul > li {
@@ -4630,6 +4630,11 @@ a.text-theme:hover,
 
 .header-layout1 .menu-area {
   z-index: 2;
+  background: linear-gradient(90deg, rgba(10, 28, 20, 0.84) 0%, rgba(14, 42, 30, 0.72) 42%, rgba(18, 65, 47, 0.42) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.16);
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
 }
 
 /* .header-layout1 .header-logo {
@@ -7842,12 +7847,17 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
 }
 
 .feature-sec1 {
-  margin-top: -118px;
+  margin-top: -54px;
+  position: relative;
   z-index: 3;
 }
 
 /* Medium Large devices */
 @media (max-width: 1299px) {
+  .feature-sec1 {
+    margin-top: -36px;
+  }
+
   .feature-card {
     gap: 20px;
     padding: 30px;
@@ -7856,6 +7866,10 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
 
 /* Medium devices */
 @media (max-width: 991px) {
+  .feature-sec1 {
+    margin-top: -18px;
+  }
+
   .feature-card .box-title {
     font-size: 20px;
   }
@@ -7863,6 +7877,10 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
 
 /* Small devices */
 @media (max-width: 767px) {
+  .feature-sec1 {
+    margin-top: 16px;
+  }
+
   .feature-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -12774,9 +12792,24 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 14px;
-  color: var(--title-color);
+  color: #ffffff;
   font-size: 22px;
   font-weight: 700;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.16);
+}
+
+.header-brand span {
+  font-family: 'EB Garamond', serif;
+  font-weight: 200;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.header-brand:hover,
+.header-brand:focus,
+.header-brand:active,
+.header-brand:visited {
+  color: #ffffff;
 }
 
 .header-brand img {
@@ -12801,10 +12834,10 @@ html {
   min-width: 52px;
   height: 42px;
   padding: 0 16px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 999px;
   background-color: rgba(255, 255, 255, 0.08);
-  color: #0f2512;
+  color: rgba(255, 255, 255, 0.92);
   font-size: 14px;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -12817,15 +12850,13 @@ html {
   color: #0f2512;
 }
 
-.menu-area .lang-item {
-  border-color: rgba(0, 0, 0, 0.12);
-  background-color: #ffffff;
-  color: var(--title-color);
-}
-
 .menu-area .lang-item.active,
 .menu-area .lang-item:hover {
   color: #ffffff;
+}
+
+.menu-area .separator {
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .mobile-lang-switch {
@@ -12843,17 +12874,41 @@ html {
 .single-hero .hero-style1 {
   max-width: 720px;
   padding-top: 150px;
-  padding-bottom: 150px;
+  padding-bottom: 182px;
   position: relative;
   z-index: 1;
 }
 
+.single-hero .hero-title {
+  max-width: 760px;
+  margin-bottom: 24px;
+}
+
+.single-hero .hero-title .title1,
+.single-hero .hero-title .title2 {
+  display: block;
+  text-shadow: 0 10px 32px rgba(0, 0, 0, 0.26);
+}
+
+.single-hero .hero-title .title2 {
+  color: #f1d69c;
+}
+
 .hero-text {
   max-width: 640px;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
   color: rgba(255, 255, 255, 0.86);
   font-size: 18px;
   line-height: 1.75;
+}
+
+.hero-actions {
+  margin-top: 8px;
+}
+
+.hero-actions .ot-btn {
+  min-width: 220px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.22);
 }
 
 .overview-image img {
@@ -12945,11 +13000,65 @@ html {
   display: flex;
   flex-direction: column;
   height: 100%;
-  border-radius: 10px;
+  min-height: 100%;
+  gap: 18px;
+  padding: 28px 26px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(18, 65, 47, 0.08);
+  box-shadow: 0 16px 42px rgba(18, 34, 24, 0.08);
+  backdrop-filter: blur(10px);
 }
 
 .feature-card .media-body {
   flex: 1;
+}
+
+.feature-card:before {
+  display: none;
+}
+
+.feature-card .box-icon {
+  width: 72px;
+  height: 72px;
+  line-height: 72px;
+  background: rgba(18, 65, 47, 0.08);
+}
+
+.feature-card .box-icon:before {
+  inset: 0;
+  background: transparent;
+}
+
+.feature-card .box-subtitle {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: var(--theme-color);
+}
+
+.feature-card .box-title {
+  max-width: none;
+  font-size: 19px;
+  line-height: 1.45;
+  color: #1f2d26;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(18, 34, 24, 0.12);
+}
+
+.feature-card:hover .box-subtitle,
+.feature-card:hover .box-title {
+  color: #1f2d26;
+}
+
+.feature-card:hover .box-icon {
+  background: rgba(18, 65, 47, 0.14);
+}
+
+.feature-card:hover .box-icon:before {
+  background: transparent;
 }
 
 
@@ -13025,7 +13134,7 @@ html {
 
 .coverage-land--north {
   top: 26px;
-  left: 48px;
+  left: 300px;
   width: 260px;
   height: 170px;
   transform: rotate(-8deg);
@@ -13039,35 +13148,62 @@ html {
   transform: rotate(18deg);
 }
 
-.coverage-route,
+.coverage-zone-label {
+  position: absolute;
+  z-index: 3;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #314825;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(49, 72, 37, 0.12);
+  box-shadow: 0 12px 28px rgba(49, 72, 37, 0.1);
+}
+
+.coverage-zone-label--usa {
+  top: 24px;
+  left: 340px;
+}
+
+.coverage-zone-label--mexico {
+  top: 28px;
+  left: 62px;
+}
+
 .coverage-link {
   position: absolute;
-  border-top: 2px dashed rgba(3, 66, 22, 0.5);
+  height: 0;
   transform-origin: left center;
 }
 
-.coverage-route--one {
-  top: 118px;
-  left: 190px;
-  width: 150px;
-  transform: rotate(-18deg);
+.coverage-link {
+  z-index: 1;
+  border-top: 2px dashed rgba(49, 72, 37, 0.46);
 }
 
-.coverage-route--two {
-  top: 180px;
-  left: 184px;
-  width: 114px;
-  transform: rotate(32deg);
+.coverage-link--guanajuato {
+  top: 100px;
+  left: 122px;
+  width: 254px;
+  transform: rotate(9deg);
 }
 
-.coverage-node,
-.coverage-hub {
+.coverage-link--queretaro {
+  top: 242px;
+  left: 122px;
+  width: 256px;
+  transform: rotate(-23deg);
+}
+
+.coverage-node {
   position: absolute;
   z-index: 2;
 }
 
-.coverage-dot,
-.coverage-hub-dot {
+.coverage-dot {
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -13076,53 +13212,50 @@ html {
   box-shadow: 0 0 0 8px rgba(151, 176, 92, 0.18);
 }
 
-.coverage-label,
-.coverage-hub-label {
+.coverage-label {
   position: absolute;
   min-width: 150px;
 }
 
-.coverage-label strong,
-.coverage-hub-label strong {
+.coverage-label strong {
   display: block;
   font-size: 14px;
 }
 
-.coverage-label span,
-.coverage-hub-label span {
+.coverage-label span {
   display: block;
   font-size: 13px;
   line-height: 1.5;
 }
 
 .coverage-node--houston {
-  top: 100px;
-  left: 170px;
+  top: 138px;
+  left: 374px;
 }
 
 .coverage-node--houston .coverage-label {
   top: -12px;
-  left: 22px;
+  left: 24px;
 }
 
 .coverage-node--guanajuato {
-  top: 148px;
-  left: 318px;
+  top: 92px;
+  left: 108px;
 }
 
 .coverage-node--guanajuato .coverage-label {
-  top: -14px;
-  left: 22px;
+  top: -51px;
+  left: -86px;
 }
 
 .coverage-node--queretaro {
-  top: 206px;
-  left: 284px;
+  top: 236px;
+  left: 108px;
 }
 
 .coverage-node--queretaro .coverage-label {
   top: 18px;
-  left: -8px;
+  left: -2px;
 }
 
 .coverage-country {
@@ -13135,13 +13268,13 @@ html {
 }
 
 .coverage-country--usa {
-  top: 48px;
-  left: 86px;
+  top: 62px;
+  left: 396px;
 }
 
 .coverage-country--mexico {
-  top: 246px;
-  left: 206px;
+  top: 200px;
+  left: 35px;
 }
 
 .coverage-points {
@@ -13204,6 +13337,35 @@ html {
     transform: translate(-50%, -46%);
   }
 
+  .coverage-zone-label {
+    font-size: 10px;
+    padding: 7px 12px;
+  }
+
+  .coverage-zone-label--usa {
+    top: 10px;
+    left: 246px;
+  }
+
+  .coverage-zone-label--mexico {
+    top: 18px;
+    left: 34px;
+  }
+
+  .coverage-link--guanajuato {
+    top: 102px;
+    left: 120px;
+    width: 168px;
+    transform: rotate(12deg);
+  }
+
+  .coverage-link--queretaro {
+    top: 184px;
+    left: 120px;
+    width: 170px;
+    transform: rotate(-23deg);
+  }
+
   .coverage-content-panel {
     max-width: 100%;
   }
@@ -13214,7 +13376,7 @@ html {
 
   .single-hero .hero-style1 {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 148px;
   }
 
   .contact-panel {
@@ -13238,6 +13400,56 @@ html {
     transform: translate(-50%, -44%);
   }
 
+  .single-hero .hero-style1 {
+    padding-bottom: 124px;
+  }
+
+  .single-hero .hero-title {
+    margin-bottom: 18px;
+  }
+
+  .hero-text {
+    margin-bottom: 28px;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .hero-actions .ot-btn {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .feature-card {
+    padding: 24px 22px;
+    border-radius: 20px;
+  }
+
+  .feature-card .box-icon {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+  }
+
+  .feature-card .box-title {
+    font-size: 18px;
+  }
+
+  .coverage-zone-label {
+    padding: 6px 10px;
+    font-size: 9px;
+    letter-spacing: 0.05em;
+  }
+
+  .coverage-zone-label--usa {
+    top: 12px;
+    left: 138px;
+  }
+
+  .coverage-zone-label--mexico {
+    top: 12px;
+    left: 10px;
+  }
+
   .coverage-land--north {
     top: 34px;
     left: 20px;
@@ -13253,45 +13465,46 @@ html {
   }
 
   .coverage-node--houston {
-    top: 92px;
-    left: 112px;
+    top: 104px;
+    left: 202px;
   }
 
   .coverage-node--guanajuato {
-    top: 150px;
-    left: 204px;
+    top: 88px;
+    left: 28px;
   }
 
   .coverage-node--queretaro {
-    top: 210px;
-    left: 188px;
+    top: 186px;
+    left: 28px;
   }
 
-  .coverage-node .coverage-label,
-  .coverage-hub .coverage-hub-label {
+  .coverage-node .coverage-label {
     min-width: 112px;
   }
 
   .coverage-country--usa {
-    top: 42px;
-    left: 34px;
+    top: 58px;
+    left: 206px;
   }
 
   .coverage-country--mexico {
-    top: 254px;
-    left: 132px;
+    top: 220px;
+    left: 34px;
   }
 
-  .coverage-route--one {
-    top: 116px;
-    left: 130px;
-    width: 92px;
+  .coverage-link--guanajuato {
+    top: 100px;
+    left: 44px;
+    width: 154px;
+    transform: rotate(4deg);
   }
 
-  .coverage-route--two {
-    top: 180px;
-    left: 132px;
-    width: 72px;
+  .coverage-link--queretaro {
+    top: 192px;
+    left: 44px;
+    width: 160px;
+    transform: rotate(-30deg);
   }
 }
 

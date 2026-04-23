@@ -8,7 +8,8 @@
     <meta name="author" content="Seedo">
     <meta name="description"
         content="Sterling Fresh Inc. ofrece vegetales frescos para exportacion con produccion confiable y servicio comercial internacional.">
-    <meta name="keywords" content="Sterling Fresh, vegetales frescos, exportación agrícola, brócoli, zanahoria, maíz" data-i18n-content="pageKeywords">
+    <meta name="keywords" content="Sterling Fresh, vegetales frescos, exportación agrícola, brócoli, zanahoria, maíz"
+        data-i18n-content="pageKeywords">
     <meta name="robots" content="INDEX,FOLLOW">
 
     <!-- Mobile Specific Metas -->
@@ -16,6 +17,7 @@
 
     <!-- Favicons - Place favicon.ico in the root directory -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png?v=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/img/favicons/favicon-16x16.png">
@@ -27,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=EB+Garamond:wght@500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!--==============================
 	    All CSS File
@@ -49,7 +51,7 @@
 
 <body data-i18n-page="index">
 
-     <div class="preloader">
+    <div class="preloader">
         <div class="preloader-inner">
             <span class="loader"></span>
         </div>
@@ -60,8 +62,8 @@
             <button class="ot-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
                 <a href="#inicio" class="header-brand justify-content-center">
-                    <img src="assets/img/hero/logo.jpeg" alt="Sterling Fresh">
-                    <span>Sterling Fresh</span>
+                    <img src="assets/img/hero/logo.jpeg" alt="STERLING FRESH">
+                    <span>STERLING FRESH</span>
                 </a>
             </div>
             <div class="ot-mobile-menu">
@@ -73,8 +75,13 @@
                 </ul>
             </div>
             <div class="lang-switch mobile-lang-switch">
-                <a href="#" class="lang-item active" data-lang="es">ES</a>
-                <a href="#" class="lang-item" data-lang="en">EN</a>
+                <a href="#" class="lang-item active" data-lang="es">
+                    <span class="fi fi-mx"></span> ES
+                </a>
+
+                <span class="separator">|</span> <a href="#" class="lang-item" data-lang="en">
+                    <span class="fi fi-us"></span> EN
+                </a>
             </div>
         </div>
     </div>
@@ -105,8 +112,13 @@
                         <div class="col-auto">
                             <div class="d-none d-lg-inline-flex align-items-center gap-3">
                                 <div class="lang-switch">
-                                    <a href="#" class="lang-item active" data-lang="es">ES</a>
-                                    <a href="#" class="lang-item" data-lang="en">EN</a>
+                                    <a href="#" class="lang-item active" data-lang="es">
+                                        <span class="fi fi-mx"></span> ES
+                                    </a>
+
+                                    <a href="#" class="lang-item" data-lang="en">
+                                        <span class="fi fi-us"></span> EN
+                                    </a>
                                 </div>
                             </div>
                             <button type="button" class="ot-menu-toggle d-inline-block d-lg-none"><i
@@ -133,10 +145,9 @@
                     <p class="hero-text" data-i18n="hero.text">Desde Houston y con producción estratégica en México,
                         Sterling Fresh impulsa una cadena confiable de abastecimiento para mercados que exigen
                         consistencia y calidad.</p>
-                    <!-- <div class="btn-group">
+                    <div class="btn-group hero-actions">
                         <a href="#servicios" class="ot-btn style3" data-i18n-html="hero.primaryCta">Ver servicios<i class="fas fa-chevrons-right ms-2"></i></a>
-                        <a href="#contacto" class="ot-btn style4" data-i18n-html="hero.secondaryCta">Solicitar información<i class="fas fa-chevrons-right ms-2"></i></a>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -245,8 +256,9 @@
                     <div class="coverage-map coverage-map--light coverage-map--final">
                         <div class="coverage-map-art">
                             <div class="coverage-land coverage-land--north"></div>
-                            <div class="coverage-route coverage-route--one"></div>
-                            <div class="coverage-route coverage-route--two"></div>
+
+                            <div class="coverage-link coverage-link--guanajuato"></div>
+                            <div class="coverage-link coverage-link--queretaro"></div>
 
                             <div class="coverage-node coverage-node--houston">
                                 <span class="coverage-dot"></span>
@@ -272,8 +284,10 @@
                                 </div>
                             </div>
 
-                            <div class="coverage-country coverage-country--usa" data-i18n="coverage.countryUsa">EEUU</div>
-                            <div class="coverage-country coverage-country--mexico" data-i18n="coverage.countryMexico">Mexico</div>
+                            <div class="coverage-country coverage-country--usa" data-i18n="coverage.countryUsa">EEUU
+                            </div>
+                            <div class="coverage-country coverage-country--mexico" data-i18n="coverage.countryMexico">
+                                Mexico</div>
                         </div>
                     </div>
                 </div>
@@ -282,8 +296,11 @@
                     <div class="title-area mb-20 coverage-showcase-title">
                         <span class="sub-title"><img src="assets/img/theme-img/subtitle_icon.svg" alt="Icon"> <span
                                 data-i18n="coverage.subtitle">Cobertura operativa</span></span>
-                        <h2 class="sec-title" data-i18n="coverage.title">Una operacion conectada entre Mexico y Estados Unidos</h2>
-                        <p class="sec-text" data-i18n="coverage.text">Produccion estrategica en Mexico, empaque coordinado y direccion comercial desde Houston para programas de exportacion con continuidad.</p>
+                        <h2 class="sec-title" data-i18n="coverage.title">Una operacion conectada entre Mexico y Estados
+                            Unidos</h2>
+                        <p class="sec-text" data-i18n="coverage.text">Produccion estrategica en Mexico, empaque
+                            coordinado y direccion comercial desde Houston para programas de exportacion con
+                            continuidad.</p>
                     </div>
                 </div>
             </div>
@@ -382,7 +399,7 @@
                         <div class="collage-img img-tertiary">
                             <img src="assets/img/bg/box.jpeg" alt="Logística de Exportación">
                         </div>
-                        <a href="https://www.youtube.com/watch?v=tu_video_aqui" class="play-btn popup-video">
+                        <a href="./assets/img/video.mp4" class="play-btn popup-video">
                             <i class="fas fa-play"></i>
                             <span class="ripple"></span>
                         </a>
