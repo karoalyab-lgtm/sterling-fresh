@@ -11128,6 +11128,9 @@ table.woocommerce-product-attributes {
   .product-about {
     padding-left: 0;
   }
+  .overview-image2 img {
+    height: 300px;
+  }
 }
 
 /* Medium devices */
@@ -13606,6 +13609,12 @@ html {
     right: unset;
     top: unset;
     margin-bottom: 50px;
+  }
+  .coverage-land--north {
+    left: 150px
+  }
+  .coverage-country--mexico {
+    left:-100px;
   }
 }
 
