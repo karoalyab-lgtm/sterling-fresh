@@ -13109,16 +13109,24 @@ html {
   gap: 34px;
   align-items: stretch;
 }
-
+/* 
 .coverage-map-panel,
 .coverage-content-panel {
   min-width: 0;
-}
+} */
 
 .coverage-map-panel {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.coverage-map-image {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  display: block;
 }
 
 .coverage-showcase-title {
@@ -13306,6 +13314,11 @@ html {
 .coverage-country--mexico {
   top: 200px;
   left: 35px;
+}
+
+.coverage-country--canada {
+  top: 28px;
+  left: 420px;
 }
 
 .coverage-points {
