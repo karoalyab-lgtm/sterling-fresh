@@ -9862,6 +9862,10 @@ table.woocommerce-product-attributes {
 }
 
 /*------------------- 4.00. Products  -------------------*/
+.product-grid-container {
+  max-width: 1380px;
+}
+
 .ot-product {
   text-align: center;
   -webkit-transition: all ease 0.4s;
@@ -9869,7 +9873,7 @@ table.woocommerce-product-attributes {
   background-color: var(--white-color);
   box-shadow: 0px 3px 15px rgba(160, 160, 160, 0.15);
   border-radius: 0;
-  padding: 20px;
+  padding: 14px 14px 18px;
 }
 
 .ot-product .product-title {
@@ -9912,14 +9916,17 @@ table.woocommerce-product-attributes {
 }
 
 .ot-product .product-img {
-  background-color: var(--smoke-color);
   overflow: hidden;
   position: relative;
-  margin: 0 0 25px 0;
+  margin: 0 0 18px 0;
   text-align: center;
-  background-color: var(--smoke-color2);
+  background-color: transparent;
   z-index: 2;
   border-radius: 0;
+}
+
+.ot-product .product-img > a {
+  display: block;
 }
 
 .ot-product .product-img:before {
@@ -9940,6 +9947,7 @@ table.woocommerce-product-attributes {
 
 .ot-product .product-img img {
   width: 100%;
+  display: block;
   -webkit-transition: all ease 0.4s;
   transition: all ease 0.4s;
   -webkit-transform: scale(1);

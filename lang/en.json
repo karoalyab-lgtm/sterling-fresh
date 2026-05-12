@@ -100,6 +100,7 @@
     "product1.detail2": "Post-harvest cooling between 34°F and 38°F with transport at 34°F.",
     "product1.detail3": "Load capacity of 480, 640, 704, or 896 cases depending on the program.",
     "product1.imageAlt": "Iceless Celery prepared for export",
+    "product1.cardAria": "View iceless celery",
     "product1.specs": [
       {
         "title": "24 ct configuration",
@@ -170,6 +171,7 @@
     "product2.detail2": "Firm, tight heads cooled with ice-water at 35°F (1.6°C).",
     "product2.detail3": "Storage and transport at 33°F to 34°F with crushed ice per case and an extra ice layer over pallets.",
     "product2.imageAlt": "Iced Asian Cut Broccoli for export",
+    "product2.cardAria": "View iced Asian cut broccoli",
     "product2.specs": [
       {
         "title": "Second S",
@@ -268,6 +270,13 @@
     "product3.detail2": "Stable program built to answer high-demand windows.",
     "product3.detail3": "A versatile option for buyers who need volume and execution discipline.",
     "product3.imageAlt": "Fresh export carrots",
+    "product3.cardAria": "View carrots",
+    "product4.name": "Iceless Broccoli",
+    "product4.imageAlt": "Iceless broccoli prepared for export",
+    "product4.cardAria": "View iceless broccoli",
+    "product5.name": "Broccoli Florets",
+    "product5.imageAlt": "Broccoli florets prepared for export",
+    "product5.cardAria": "View broccoli florets",
     "note.title": "We build programs with commercial focus",
     "note.text": "If you need to adjust packing, supply frequency, or delivery windows for any of these products, the commercial team can review the program with you and define a clear operational path."
   }

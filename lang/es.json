@@ -100,6 +100,7 @@
     "product1.detail2": "Enfriamiento postcosecha entre 34°F y 38°F con transporte a 34°F.",
     "product1.detail3": "Capacidad de carga de 480, 640, 704 o 896 cajas por embarque, según programa.",
     "product1.imageAlt": "Apio Iceless listo para exportación",
+    "product1.cardAria": "Ver apio sin hielo",
     "product1.specs": [
       {
         "title": "Configuración 24 ct",
@@ -170,6 +171,7 @@
     "product2.detail2": "Cabezas firmes y cerradas con enfriamiento en agua con hielo a 35°F (1.6°C).",
     "product2.detail3": "Temperatura de almacenamiento y transporte de 33°F a 34°F con hielo triturado por caja y capa adicional sobre el pallet.",
     "product2.imageAlt": "Brócoli asiático cortado con hielo para exportación",
+    "product2.cardAria": "Ver brócoli asiático cortado con hielo",
     "product2.specs": [
       {
         "title": "Second S",
@@ -267,6 +269,13 @@
     "product3.detail2": "Programa estable para responder a ventanas de alta demanda.",
     "product3.detail3": "Opción versátil para compradores que necesitan volumen y disciplina operativa.",
     "product3.imageAlt": "Zanahoria fresca de exportación",
+    "product3.cardAria": "Ver zanahoria",
+    "product4.name": "Brócoli sin hielo",
+    "product4.imageAlt": "Brócoli sin hielo para exportación",
+    "product4.cardAria": "Ver brócoli sin hielo",
+    "product5.name": "Brócoli florete",
+    "product5.imageAlt": "Brócoli florete para exportación",
+    "product5.cardAria": "Ver brócoli florete",
     "note.title": "Desarrollamos programas con foco comercial",
     "note.text": "Si necesitas ajustar empaque, frecuencia de suministro o ventanas de entrega para alguno de estos productos, el equipo comercial puede revisar el programa contigo y definir una salida operativa clara."
   }
