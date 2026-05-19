@@ -108,7 +108,7 @@
                 <ul>
                     <li><a href="index.html#inicio" data-i18n="nav.home">Inicio</a></li>
                     <li><a href="index.html#servicios" data-i18n="nav.services">Servicios</a></li>
-                    <li><a href="index.html#contacto" data-i18n="nav.contact">Contáctanos</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contáctanos</a></li>
                     <li><a href="products.html" data-i18n="nav.products">Productos</a></li>
                 </ul>
             </div>
@@ -142,7 +142,7 @@
                                 <ul>
                                     <li><a href="index.html#inicio" data-i18n="nav.home">Inicio</a></li>
                                     <li><a href="index.html#servicios" data-i18n="nav.services">Servicios</a></li>
-                                    <li><a href="index.html#contacto" data-i18n="nav.contact">Contáctanos</a></li>
+                                    <li><a href="contact.html" data-i18n="nav.contact">Contáctanos</a></li>
                                     <li><a href="products.html" data-i18n="nav.products">Productos</a></li>
                                 </ul>
                             </nav>
@@ -226,7 +226,7 @@
                         </div>
                         <div class="product-content">
                             <h3 class="product-title mb-2"><a href="#QuickView" class="popup-content js-open-product"
-                                    data-product="2" data-i18n="product2.name">Brocoli asiatico cortado con hielo</a>
+                                    data-product="2" data-i18n="product2.name">Coronas de Broccoli con hielo</a>
                             </h3>
                         </div>
                     </div>
@@ -248,7 +248,7 @@
                         </div>
                         <div class="product-content">
                             <h3 class="product-title mb-2"><a href="#QuickView" class="popup-content js-open-product"
-                                    data-product="4" data-i18n="product4.name">Brocoli sin hielo</a>
+                                    data-product="4" data-i18n="product4.name">Coronas de Broccoli sin hielo</a>
                             </h3>
                         </div>
                     </div>
@@ -270,7 +270,51 @@
                         </div>
                         <div class="product-content">
                             <h3 class="product-title mb-2"><a href="#QuickView" class="popup-content js-open-product"
-                                    data-product="5" data-i18n="product5.name">Brocoli florete</a>
+                                    data-product="5" data-i18n="product5.name">Floretes de Broccoli: Floret Regular</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="ot-product product-grid js-product-card" data-product="6"
+                        data-product-image="assets/img/product/broccoli-florete.png">
+                        <div class="product-img">
+                            <a href="#QuickView" class="popup-content js-open-product" data-product="6">
+                                <img src="assets/img/product/broccoli-florete.png" alt="Broccoli floret select"
+                                    data-i18n-alt="product6.imageAlt">
+                            </a>
+                            <div class="actions">
+                                <a href="#QuickView" class="icon-btn popup-content js-open-product" data-product="6"
+                                    aria-label="Ver producto 6" data-i18n-aria-label="product6.cardAria"><i
+                                        class="far fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title mb-2"><a href="#QuickView" class="popup-content js-open-product"
+                                    data-product="6" data-i18n="product6.name">Floretes de Broccoli: Floret Select</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="ot-product product-grid js-product-card" data-product="7"
+                        data-product-image="assets/img/product/broccoli-florete.png">
+                        <div class="product-img">
+                            <a href="#QuickView" class="popup-content js-open-product" data-product="7">
+                                <img src="assets/img/product/broccoli-florete.png" alt="Mini broccoli floret"
+                                    data-i18n-alt="product7.imageAlt">
+                            </a>
+                            <div class="actions">
+                                <a href="#QuickView" class="icon-btn popup-content js-open-product" data-product="7"
+                                    aria-label="Ver producto 7" data-i18n-aria-label="product7.cardAria"><i
+                                        class="far fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title mb-2"><a href="#QuickView" class="popup-content js-open-product"
+                                    data-product="7" data-i18n="product7.name">Floretes de Broccoli: Mini Floret</a>
                             </h3>
                         </div>
                     </div>
@@ -321,7 +365,7 @@
                             <ul>
                                 <li><a href="index.html#inicio" data-i18n="nav.home">Inicio</a></li>
                                 <li><a href="index.html#servicios" data-i18n="nav.services">Servicios</a></li>
-                                <li><a href="index.html#contacto" data-i18n="nav.contact">Contáctanos</a></li>
+                                <li><a href="contact.html" data-i18n="nav.contact">Contáctanos</a></li>
                                 <li><a href="products.html" data-i18n="nav.products">Productos</a></li>
                             </ul>
                         </nav>
@@ -476,20 +520,37 @@
 
                 Object.keys(bindings).forEach(function (id) {
                     var node = document.getElementById(id);
-                    if (node && typeof bindings[id] === 'string') {
-                        node.textContent = bindings[id];
+                    if (!node) {
+                        return;
                     }
+
+                    if (typeof bindings[id] === 'string') {
+                        node.textContent = bindings[id];
+                        return;
+                    }
+
+                    node.textContent = '';
                 });
 
+                var detailNodes = [
+                    document.getElementById('quickViewDetail1'),
+                    document.getElementById('quickViewDetail2'),
+                    document.getElementById('quickViewDetail3')
+                ];
                 var overviewSection = document.getElementById('quickViewOverviewSection');
                 if (overviewSection) {
                     overviewSection.hidden = typeof content.specOverview !== 'string' || content.specOverview.length === 0;
                 }
 
-                var hasSpecs = Array.isArray(content.specs) && content.specs.length > 0;
+                var hasMeta = typeof content.presentation === 'string' && content.presentation.length > 0
+                    && typeof content.idealFor === 'string' && content.idealFor.length > 0;
+                var hasDetails = detailNodes.some(function (node, index) {
+                    var key = 'detail' + (index + 1);
+                    return node && typeof content[key] === 'string' && content[key].length > 0;
+                });
                 var summaryNode = document.getElementById('quickViewSummary');
                 if (summaryNode) {
-                    var showSummary = !hasSpecs && typeof content.summary === 'string' && content.summary.length > 0;
+                    var showSummary = typeof content.summary === 'string' && content.summary.length > 0;
                     summaryNode.hidden = !showSummary;
                     if (showSummary) {
                         summaryNode.textContent = content.summary;
@@ -498,12 +559,12 @@
 
                 var metaNode = document.getElementById('quickViewMeta');
                 if (metaNode) {
-                    metaNode.hidden = hasSpecs;
+                    metaNode.hidden = !hasMeta;
                 }
 
                 var detailsNode = document.getElementById('quickViewDetailsSection');
                 if (detailsNode) {
-                    detailsNode.hidden = hasSpecs;
+                    detailsNode.hidden = !hasDetails;
                 }
 
                 renderSpecs(content.specs);

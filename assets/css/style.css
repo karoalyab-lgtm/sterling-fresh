@@ -1964,7 +1964,7 @@ textarea.is-invalid {
 }
 
 .sec-text {
-  max-width: 670px;
+  max-width: 65%;
 }
 
 .title-area.text-center .sec-text {
@@ -6474,6 +6474,8 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
 /* Hero 1 ---------------------------------- */
 .hero-1 .ot-hero-bg {
   background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-1 .play-btn {
@@ -12955,6 +12957,74 @@ html {
   border-radius: 10px;
 }
 
+.certifications-section {
+  margin-top: 36px;
+}
+
+.certifications-grid {
+  --bs-gutter-x: 22px;
+  --bs-gutter-y: 18px;
+  justify-content: center;
+}
+
+.certifications-label {
+  margin: 0 0 18px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--theme-color);
+}
+
+.certification-logo-wrap {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.certification-logo {
+  max-width: 100%;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.certification-logo--tall {
+  max-height: 180px;
+}
+
+.contact-page-section {
+  position: relative;
+  overflow: hidden;
+  background: #f4fdf2;
+  /* background-size: cover; */
+  /* background-position: center;
+  background-repeat: no-repeat; */
+}
+
+.contact-page-section.space {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.contact-page-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.1), transparent 34%), radial-gradient(circle at bottom right, rgba(240, 214, 156, 0.08), transparent 28%);
+  pointer-events: none;
+}
+
+.contact-page-section .container {
+  position: relative;
+  z-index: 1;
+}
+
 .contact-panel {
   padding: 40px;
   border-radius: 10px;
@@ -12973,6 +13043,58 @@ html {
   padding: 18px 22px;
   border-radius: 20px;
   background-color: var(--smoke-color2);
+}
+
+.contact-market-section {
+  margin-top: 36px;
+}
+
+.contact-market-section .title-area {
+  padding: 30px 28px;
+  border-radius: 24px;
+  background: rgba(255, 252, 246, 0.9);
+  box-shadow: 0 18px 40px rgba(16, 24, 40, 0.08);
+}
+
+.contact-market-card {
+  position: relative;
+  padding: 28px 24px 24px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #fffdf8 0%, #f6f3ea 100%);
+  border: 1px solid rgba(0, 122, 67, 0.12);
+  box-shadow: 0 18px 40px rgba(16, 24, 40, 0.08);
+}
+
+.contact-market-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 42px;
+  margin-bottom: 18px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background-color: rgba(0, 122, 67, 0.12);
+  color: #0f5132;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.contact-market-card h4 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.contact-market-card p {
+  margin: 0;
+  color: #5b6254;
+  line-height: 1.7;
+}
+
+.contact-page-section iframe {
+  filter: saturate(0.88) contrast(1.02);
 }
 
 .overview-copy {
@@ -13108,13 +13230,16 @@ html {
 }
 
 .coverage-showcase .container {
-  max-width: 1360px;
+  max-width: 100%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .coverage-shell {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.8fr);
-  gap: 34px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
   align-items: stretch;
 }
 /* 
@@ -13126,8 +13251,16 @@ html {
 .coverage-map-panel {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding: 0;
+}
+
+.coverage-map-stage {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .coverage-map-image {
@@ -13137,12 +13270,148 @@ html {
   display: block;
 }
 
+.coverage-hotspot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 3;
+}
+
+.coverage-hotspot--canada {
+  top: 25%;
+  left: 53%;
+}
+
+.coverage-hotspot--usa {
+  top: 63%;
+  left: 55%;
+}
+
+.coverage-hotspot-dot {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #007a43;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 7px rgba(0, 122, 67, 0.16);
+  animation: coveragePulseHalo 2.8s ease-out infinite;
+  transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.coverage-hotspot:hover .coverage-hotspot-dot,
+.coverage-hotspot:focus .coverage-hotspot-dot,
+.coverage-hotspot:focus-visible .coverage-hotspot-dot {
+  transform: scale(1.12);
+  box-shadow: 0 0 0 7px rgba(0, 122, 67, 0.16), 0 0 0 11px rgba(255, 107, 53, 0.1);
+  animation-play-state: paused;
+}
+
+@keyframes coveragePulseHalo {
+  0% {
+    box-shadow: 0 0 0 7px rgba(0, 122, 67, 0.12);
+  }
+
+  55% {
+    box-shadow: 0 0 0 10px rgba(0, 122, 67, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0 7px rgba(0, 122, 67, 0.12);
+  }
+}
+
 .coverage-showcase-title {
-  max-width: 580px;
+  width: min(100%, 1180px);
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .coverage-showcase-title .sec-text {
+  width: min(100%, 1080px);
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   color: #5b6254;
+}
+
+.coverage-layout {
+  margin: 0;
+  --bs-gutter-x: 28px;
+  --bs-gutter-y: 28px;
+}
+
+.coverage-cities-panel {
+  height: 100%;
+  padding: 26px 22px;
+  border-radius: 24px;
+  background: #f6f3ea;
+  border: 1px solid rgba(0, 122, 67, 0.12);
+  box-shadow: 0 16px 36px rgba(34, 44, 28, 0.08);
+}
+
+.coverage-cities-header {
+  margin-bottom: 18px;
+}
+
+.coverage-cities-title {
+  margin: 0 0 8px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.coverage-cities-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #5b6254;
+}
+
+.coverage-city-group + .coverage-city-group {
+  margin-top: 18px;
+}
+
+.coverage-city-group h4 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0f5132;
+}
+
+.coverage-city-group ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.coverage-city-group li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #2f3b29;
+}
+
+.coverage-city-group li + li {
+  margin-top: 7px;
+}
+
+.coverage-city-group li::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #007a43;
 }
 
 .coverage-map {
@@ -13374,8 +13643,31 @@ html {
 }
 
 @media (max-width: 991px) {
+  .contact-page-section.space {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .hero-1 .ot-hero-bg,
+  .contact-page-section {
+    background-attachment: scroll;
+  }
+
+  .coverage-map-stage {
+    width: 100%;
+  }
+
   .coverage-shell {
     grid-template-columns: 1fr;
+  }
+
+  .coverage-showcase .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .coverage-showcase-title {
+    max-width: 100%;
   }
 
   .coverage-map--final {
@@ -13418,8 +13710,8 @@ html {
     transform: rotate(-23deg);
   }
 
-  .coverage-content-panel {
-    max-width: 100%;
+  .coverage-cities-panel {
+    padding: 24px 20px;
   }
 
   .single-hero .ot-hero-bg::before {
@@ -13435,15 +13727,99 @@ html {
     padding: 30px 24px;
   }
 
+  .certifications-section {
+    margin-top: 30px;
+  }
+
+  .contact-market-section {
+    margin-top: 30px;
+  }
+
+  .contact-market-section .title-area {
+    padding: 26px 22px;
+  }
+
+  .contact-market-card {
+    padding: 24px 20px 22px;
+  }
+
+  .contact-market-card h4 {
+    font-size: 20px;
+  }
+
   .single-footer-nav ul {
     justify-content: center;
   }
 }
 
 @media (max-width: 767px) {
+  .contact-page-section.space {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .certifications-section {
+    margin-top: 34px;
+  }
+
+  .certification-logo-wrap {
+    min-height: 132px;
+    padding: 10px;
+    border-radius: 14px;
+  }
+
+  .certification-logo {
+    max-height: 100px;
+  }
+
+  .certification-logo--tall {
+    max-height: 140px;
+  }
+
   .coverage-showcase .container {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .coverage-map-stage {
+    width: 100%;
+  }
+
+  .coverage-layout {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 20px;
+  }
+
+  .coverage-cities-panel {
+    padding: 22px 18px;
+    border-radius: 20px;
+  }
+
+  .contact-market-section {
+    margin-top: 24px;
+  }
+
+  .contact-market-section .title-area {
+    padding: 22px 18px;
+    border-radius: 18px;
+  }
+
+  .contact-market-card {
+    padding: 22px 18px 20px;
+    border-radius: 18px;
+  }
+
+  .contact-market-card h4 {
+    font-size: 18px;
+  }
+
+  .coverage-cities-title {
+    font-size: 20px;
+  }
+
+  .coverage-hotspot {
+    width: 18px;
+    height: 18px;
   }
 
   .coverage-map-art {
