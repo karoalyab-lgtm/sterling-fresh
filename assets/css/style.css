@@ -9122,7 +9122,7 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
 /* Estilo base para todas las imágenes del collage */
 .collage-img {
   position: absolute;
-  border-radius: 22px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 18px 44px rgba(19, 27, 15, 0.16);
   transition: transform 0.45s ease, box-shadow 0.45s ease;
@@ -13271,7 +13271,7 @@ html {
   width: 100%;
   min-height: 560px;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 10px;
   box-shadow: 0 24px 60px rgba(39, 62, 32, 0.12);
 }
 
@@ -13391,7 +13391,7 @@ html {
 .coverage-cities-panel {
   height: 100%;
   padding: 26px 22px;
-  border-radius: 24px;
+  border-radius: 10px;
   background: #f6f3ea;
   border: 1px solid rgba(0, 122, 67, 0.12);
   box-shadow: 0 16px 36px rgba(34, 44, 28, 0.08);
